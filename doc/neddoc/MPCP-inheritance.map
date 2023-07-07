@@ -1,0 +1,7 @@
+<area shape="rect" id="node1" href="MPCP.html" title="Packet MPCP" alt="" coords="267,83,339,111">
+<area shape="rect" id="node4" href="MPCPGate.html" title="Packet MPCPGate" alt="" coords="5,161,93,189">
+<area shape="rect" id="node6" href="MPCPRegAck.html" title="Packet MPCPRegAck" alt="" coords="117,161,224,189">
+<area shape="rect" id="node8" href="MPCPRegister.html" title="Packet MPCPRegister" alt="" coords="248,161,357,189">
+<area shape="rect" id="node10" href="MPCPRegReq.html" title="Packet MPCPRegReq" alt="" coords="381,161,491,189">
+<area shape="rect" id="node12" href="MPCPReport.html" title="Packet MPCPReport" alt="" coords="515,161,613,189">
+<area shape="rect" id="node2" href="../../../inetmanet/doc/neddoc/EthernetIIFrame.html" title="Packet EthernetIIFrame" alt="" coords="245,6,360,34">

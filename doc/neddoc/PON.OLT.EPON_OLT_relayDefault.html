@@ -1,0 +1,124 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Simple Module <i>EPON_OLT_relayDefault</i></h2>
+<b>Package:</b> PON.OLT<br/><b>File: <a href="src-OLT-EPON_OLT_relayDefault.ned.html">src/OLT/EPON_OLT_relayDefault.ned</a></b><br/><p><a href="../doxy/classEPON__OLT__relayDefault.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>TODO auto-generated module</p>
+<img src="PON.OLT.EPON_OLT_relayDefault-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="PON.OLT.EPON_OLT_relayDefault.html" title="EPON_OLT_relayDefault" alt="EPON_OLT_relayDefault" coords="0,0,185,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+<img src="PON.OLT.EPON_OLT_relayDefault-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" id="node1" href="PON.OLT.EPON_OLT_relayDefault.html" title="Simple Module EPON_OLT_relayDefault" alt="" coords="5,6,173,34">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+<img src="PON.OLT.EPON_OLT_relayDefault-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" id="node1" href="PON.OLT.EPON_OLT_relayDefault.html" title="Simple Module EPON_OLT_relayDefault" alt="" coords="5,83,173,111">
+<area shape="rect" id="node2" href="PON.OLT.EPON_OLT_relay.html" title="Module Interface EPON_OLT_relay" alt="" coords="27,6,152,34">
+</map>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">addressTableFile</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">""</td>
+   <td>
+<p>set to empty string if not used</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">addressTableSize</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1000</td>
+   <td>
+<p>max size of address table</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">agingTime</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">7200s</td>
+   <td>
+<p>max idle time for address table entries
+(when it expires, entry is removed from the table)</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Gates:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Direction</th>
+      <th>Size</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">toPONin</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>from OLT (EPON net)</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">toPONout</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>to OLT (EPON net)</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">ethIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>to other ports</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">ethOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>to other ports</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// TODO auto-generated module
+//
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">EPON_OLT_relayDefault</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">like</span><span style="color: #000000; "> </span><span style="color: #000000; ">EPON_OLT_relay</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">addressTableFile</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;&quot;</span><span style="color: #000000; ">);  	  </span><span style="color: #808080; font-style: italic; ">// set to empty string if not used
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">addressTableSize</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">1000</span><span style="color: #000000; ">); 		  </span><span style="color: #808080; font-style: italic; ">// max size of address table
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">agingTime</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;s&quot;</span><span style="color: #000000; ">) = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">7200</span><span style="color: #000000; ">s</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// max idle time for address table entries
+</span><span style="color: #000000; ">                                     				  </span><span style="color: #808080; font-style: italic; ">// (when it expires, entry is removed from the table)
+</span><span style="color: #000000; ">
+    </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">toPONin</span><span style="color: #000000; ">;	   		</span><span style="color: #808080; font-style: italic; ">// from OLT (EPON net)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">toPONout</span><span style="color: #000000; ">;	   	</span><span style="color: #808080; font-style: italic; ">// to OLT (EPON net)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">ethIn</span><span style="color: #000000; ">;     	</span><span style="color: #808080; font-style: italic; ">// to other ports
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">ethOut</span><span style="color: #000000; ">;     	</span><span style="color: #808080; font-style: italic; ">// to other ports
+</span><span style="color: #000000; ">
+
+}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

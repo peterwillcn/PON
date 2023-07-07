@@ -1,0 +1,1313 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Network <i>pon_srv</i></h2>
+<b>Package:</b> default<br/><b>File: <a href="simulations-pon_srv.ned.html">simulations/pon_srv.ned</a></b><br/><p>(no description)</p><img src="pon_srv-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="PON.PON_Splitter.html" title="PON_Splitter" alt="PON_Splitter" coords="195,211,270,256">
+<area shape="rect" href="PON.ONU.EPON_ONU.html" title="EPON_ONU" alt="EPON_ONU" coords="403,135,465,181">
+<area shape="rect" href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html" title="EtherHost" alt="EtherHost" coords="520,128,564,187">
+<area shape="rect" href="PON.ONU.EPON_ONU.html" title="EPON_ONU" alt="EPON_ONU" coords="399,254,469,300">
+<area shape="rect" href="PON.ONU.EPON_ONU.html" title="EPON_ONU" alt="EPON_ONU" coords="399,192,469,238">
+<area shape="rect" href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html" title="EtherHost" alt="EtherHost" coords="520,192,564,251">
+<area shape="rect" href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html" title="EtherHost" alt="EtherHost" coords="520,254,564,313">
+<area shape="rect" href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html" title="EtherHost" alt="EtherHost" coords="68,134,112,193">
+<area shape="rect" href="PON.OLT.EPON_OLT.html" title="EPON_OLT" alt="EPON_OLT" coords="116,204,170,263">
+<area shape="rect" href="PON.common.ServiceConfig.html" title="ServiceConfig" alt="ServiceConfig" coords="182,96,265,155">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+<img src="pon_srv-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" id="node1" href="pon_srv.html" title="Network pon_srv" alt="" coords="361,6,433,34">
+<area shape="rect" id="node2" href="PON.ONU.EPON_ONU.html" title="Compound Module EPON_ONU" alt="" coords="5,83,101,111">
+<area shape="rect" id="node4" href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html" title="Compound Module EtherHost" alt="" coords="125,83,205,111">
+<area shape="rect" id="node6" href="PON.PON_Splitter.html" title="Simple Module PON_Splitter" alt="" coords="229,83,328,111">
+<area shape="rect" id="node8" href="PON.OLT.EPON_OLT.html" title="Compound Module EPON_OLT" alt="" coords="352,83,443,111">
+<area shape="rect" id="node10" href="ned.DatarateChannel.html" title="Channel DatarateChannel" alt="" coords="467,83,587,111">
+<area shape="rect" id="node12" href="PON.common.ServiceConfig.html" title="Simple Module ServiceConfig" alt="" coords="611,83,715,111">
+<area shape="rect" id="node14" href="pon_srv.GFX.html" title="Channel GFX" alt="" coords="739,83,811,111">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+<img src="pon_srv-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" id="node1" href="pon_srv.html" title="Network pon_srv" alt="" coords="5,6,77,34">
+</map>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">isNetwork</td>
+   <td width="100"><i></i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Unassigned submodule parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td><a href="PON.PON_Splitter.html">pon_Splitter</a>.haltOn</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">10</td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu</a>.<a href="PON.ONU.ONU_Port.html">onu_port</a>.<a href="PON.common.EPON_mac.html">epon_mac</a>.address</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"auto"</td>
+   <td>
+<p>MAC address as hex string (12 hex digits), or
+"auto". "auto" values will be replaced by
+a generated MAC address in init stage 0.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu</a>.<a href="PON.ONU.ONU_Port.html">onu_port</a>.<a href="PON.common.EPON_mac.html">epon_mac</a>.txQueueLimit</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">2</td>
+   <td>
+<p>maximum number of frames queued up for transmission;
+additional frames are dropped. Only used if queueModule==""
+The 2nd frame is used in case of changing registers with <a href="MPCP.html">MPCP</a>
+... sometimes 1 is already transmitted and the next <a href="MPCP.html">MPCP</a> decides 
+to transmitt again with the new times.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu</a>.<a href="PON.ONU.ONU_Port.html">onu_port</a>.<a href="PON.common.EPON_mac.html">epon_mac</a>.queueModule</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">""</td>
+   <td>
+<p>name of optional external queue module</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu</a>.<a href="PON.ONU.ONU_Port.html">onu_port</a>.<a href="PON.common.EPON_mac.html">epon_mac</a>.mtu</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1500</td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu</a>.<a href="PON.ONU.ONU_Port.html">onu_port</a>.<a href="PON.ONU.ONU_Q_mgmt.html">onu_Q_mgmt</a>.regTimeOut</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu</a>.<a href="PON.ONU.ONU_Port.html">onu_port</a>.<a href="PON.ONU.ONU_Q_mgmt.html">onu_Q_mgmt</a>.queueLimit</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu</a>.<a href="PON.ONU.ONU_Port.html">onu_port</a>.<a href="PON.ONU.ONU_Q_mgmt.html">onu_Q_mgmt</a>.statsGranularity</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu</a>.<a href="PON.ONU.EPON_ONU_relay.html">epon_ONU_relay</a>.addressTableFile</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu</a>.<a href="PON.ONU.EPON_ONU_relay.html">epon_ONU_relay</a>.addressTableSize</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu</a>.<a href="PON.ONU.EPON_ONU_relay.html">epon_ONU_relay</a>.agingTime</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.address</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"auto"</td>
+   <td>
+<p>MAC address as hex string (12 hex digits), or
+"auto". "auto" values will be replaced by
+a generated MAC address in init stage 0.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.txrate</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">100Mbps</td>
+   <td>
+<p>maximum data rate supported by this station (bit/s);
+actually chosen speed may be lower due to auto-
+configuration. 0 means fully auto-configured.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.duplexEnabled</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">true</td>
+   <td>
+<p>whether duplex mode can be enabled or not; whether
+MAC will actually use duplex mode depends on the result
+of the auto-configuration process (duplex is only
+possible with DTE-to-DTE connection).</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.txQueueLimit</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1000</td>
+   <td>
+<p>maximum number of frames queued up for transmission;
+additional frames are dropped. Only used if queueModule==""</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.queueModule</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">""</td>
+   <td>
+<p>name of optional external queue module</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.mtu</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1500</td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host1</a>.<a href="../../../inetmanet/doc/neddoc/inet.applications.ethernet.EtherAppCli.html">cli</a>.destAddress</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">""</td>
+   <td>
+<p>destination MAC address, or module path name of destination station; empty means off</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host1</a>.<a href="../../../inetmanet/doc/neddoc/inet.applications.ethernet.EtherAppCli.html">cli</a>.startTime</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">this.waitTime</td>
+   <td>
+<p>time of sending the first request</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host1</a>.<a href="../../../inetmanet/doc/neddoc/inet.applications.ethernet.EtherAppCli.html">cli</a>.waitTime</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">uniform(0s,1s)</td>
+   <td>
+<p>interval between sending requests</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host1</a>.<a href="../../../inetmanet/doc/neddoc/inet.applications.ethernet.EtherAppCli.html">cli</a>.reqLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">100B</td>
+   <td>
+<p>length of request packets</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host1</a>.<a href="../../../inetmanet/doc/neddoc/inet.applications.ethernet.EtherAppCli.html">cli</a>.respLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1KB</td>
+   <td>
+<p>length of response packets</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host1</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.promiscuous</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">false</td>
+   <td>
+<p>if true, all packets are received, otherwise only the
+ones with matching destination MAC address</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host1</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.address</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"auto"</td>
+   <td>
+<p>MAC address as hex string (12 hex digits), or
+"auto". "auto" values will be replaced by
+a generated MAC address in init stage 0.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host1</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.txrate</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">100Mbps</td>
+   <td>
+<p>maximum data rate supported by this station (bit/s);
+actually chosen speed may be lower due to auto-
+configuration. 0 means fully auto-configured.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host1</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.duplexEnabled</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">true</td>
+   <td>
+<p>whether duplex mode can be enabled or not; whether
+MAC will actually use duplex mode depends on the result
+of the auto-configuration process (duplex is only
+possible with DTE-to-DTE connection).</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host1</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.txQueueLimit</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1000</td>
+   <td>
+<p>maximum number of frames queued up for transmission;
+additional frames are dropped. Only used if queueModule==""</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host1</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.mtu</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1500</td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu3</a>.<a href="PON.ONU.ONU_Port.html">onu_port</a>.<a href="PON.common.EPON_mac.html">epon_mac</a>.address</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"auto"</td>
+   <td>
+<p>MAC address as hex string (12 hex digits), or
+"auto". "auto" values will be replaced by
+a generated MAC address in init stage 0.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu3</a>.<a href="PON.ONU.ONU_Port.html">onu_port</a>.<a href="PON.common.EPON_mac.html">epon_mac</a>.txQueueLimit</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">2</td>
+   <td>
+<p>maximum number of frames queued up for transmission;
+additional frames are dropped. Only used if queueModule==""
+The 2nd frame is used in case of changing registers with <a href="MPCP.html">MPCP</a>
+... sometimes 1 is already transmitted and the next <a href="MPCP.html">MPCP</a> decides 
+to transmitt again with the new times.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu3</a>.<a href="PON.ONU.ONU_Port.html">onu_port</a>.<a href="PON.common.EPON_mac.html">epon_mac</a>.queueModule</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">""</td>
+   <td>
+<p>name of optional external queue module</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu3</a>.<a href="PON.ONU.ONU_Port.html">onu_port</a>.<a href="PON.common.EPON_mac.html">epon_mac</a>.mtu</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1500</td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu3</a>.<a href="PON.ONU.ONU_Port.html">onu_port</a>.<a href="PON.ONU.ONU_Q_mgmt.html">onu_Q_mgmt</a>.regTimeOut</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu3</a>.<a href="PON.ONU.ONU_Port.html">onu_port</a>.<a href="PON.ONU.ONU_Q_mgmt.html">onu_Q_mgmt</a>.queueLimit</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu3</a>.<a href="PON.ONU.ONU_Port.html">onu_port</a>.<a href="PON.ONU.ONU_Q_mgmt.html">onu_Q_mgmt</a>.statsGranularity</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu3</a>.<a href="PON.ONU.EPON_ONU_relay.html">epon_ONU_relay</a>.addressTableFile</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu3</a>.<a href="PON.ONU.EPON_ONU_relay.html">epon_ONU_relay</a>.addressTableSize</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu3</a>.<a href="PON.ONU.EPON_ONU_relay.html">epon_ONU_relay</a>.agingTime</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu3</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.address</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"auto"</td>
+   <td>
+<p>MAC address as hex string (12 hex digits), or
+"auto". "auto" values will be replaced by
+a generated MAC address in init stage 0.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu3</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.txrate</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">100Mbps</td>
+   <td>
+<p>maximum data rate supported by this station (bit/s);
+actually chosen speed may be lower due to auto-
+configuration. 0 means fully auto-configured.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu3</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.duplexEnabled</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">true</td>
+   <td>
+<p>whether duplex mode can be enabled or not; whether
+MAC will actually use duplex mode depends on the result
+of the auto-configuration process (duplex is only
+possible with DTE-to-DTE connection).</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu3</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.txQueueLimit</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1000</td>
+   <td>
+<p>maximum number of frames queued up for transmission;
+additional frames are dropped. Only used if queueModule==""</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu3</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.queueModule</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">""</td>
+   <td>
+<p>name of optional external queue module</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu3</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.mtu</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1500</td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu2</a>.<a href="PON.ONU.ONU_Port.html">onu_port</a>.<a href="PON.common.EPON_mac.html">epon_mac</a>.address</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"auto"</td>
+   <td>
+<p>MAC address as hex string (12 hex digits), or
+"auto". "auto" values will be replaced by
+a generated MAC address in init stage 0.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu2</a>.<a href="PON.ONU.ONU_Port.html">onu_port</a>.<a href="PON.common.EPON_mac.html">epon_mac</a>.txQueueLimit</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">2</td>
+   <td>
+<p>maximum number of frames queued up for transmission;
+additional frames are dropped. Only used if queueModule==""
+The 2nd frame is used in case of changing registers with <a href="MPCP.html">MPCP</a>
+... sometimes 1 is already transmitted and the next <a href="MPCP.html">MPCP</a> decides 
+to transmitt again with the new times.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu2</a>.<a href="PON.ONU.ONU_Port.html">onu_port</a>.<a href="PON.common.EPON_mac.html">epon_mac</a>.queueModule</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">""</td>
+   <td>
+<p>name of optional external queue module</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu2</a>.<a href="PON.ONU.ONU_Port.html">onu_port</a>.<a href="PON.common.EPON_mac.html">epon_mac</a>.mtu</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1500</td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu2</a>.<a href="PON.ONU.ONU_Port.html">onu_port</a>.<a href="PON.ONU.ONU_Q_mgmt.html">onu_Q_mgmt</a>.regTimeOut</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu2</a>.<a href="PON.ONU.ONU_Port.html">onu_port</a>.<a href="PON.ONU.ONU_Q_mgmt.html">onu_Q_mgmt</a>.queueLimit</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu2</a>.<a href="PON.ONU.ONU_Port.html">onu_port</a>.<a href="PON.ONU.ONU_Q_mgmt.html">onu_Q_mgmt</a>.statsGranularity</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu2</a>.<a href="PON.ONU.EPON_ONU_relay.html">epon_ONU_relay</a>.addressTableFile</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu2</a>.<a href="PON.ONU.EPON_ONU_relay.html">epon_ONU_relay</a>.addressTableSize</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu2</a>.<a href="PON.ONU.EPON_ONU_relay.html">epon_ONU_relay</a>.agingTime</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu2</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.address</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"auto"</td>
+   <td>
+<p>MAC address as hex string (12 hex digits), or
+"auto". "auto" values will be replaced by
+a generated MAC address in init stage 0.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu2</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.txrate</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">100Mbps</td>
+   <td>
+<p>maximum data rate supported by this station (bit/s);
+actually chosen speed may be lower due to auto-
+configuration. 0 means fully auto-configured.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu2</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.duplexEnabled</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">true</td>
+   <td>
+<p>whether duplex mode can be enabled or not; whether
+MAC will actually use duplex mode depends on the result
+of the auto-configuration process (duplex is only
+possible with DTE-to-DTE connection).</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu2</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.txQueueLimit</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1000</td>
+   <td>
+<p>maximum number of frames queued up for transmission;
+additional frames are dropped. Only used if queueModule==""</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu2</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.queueModule</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">""</td>
+   <td>
+<p>name of optional external queue module</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.ONU.EPON_ONU.html">epon_onu2</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.mtu</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1500</td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host3</a>.<a href="../../../inetmanet/doc/neddoc/inet.applications.ethernet.EtherAppCli.html">cli</a>.destAddress</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">""</td>
+   <td>
+<p>destination MAC address, or module path name of destination station; empty means off</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host3</a>.<a href="../../../inetmanet/doc/neddoc/inet.applications.ethernet.EtherAppCli.html">cli</a>.startTime</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">this.waitTime</td>
+   <td>
+<p>time of sending the first request</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host3</a>.<a href="../../../inetmanet/doc/neddoc/inet.applications.ethernet.EtherAppCli.html">cli</a>.waitTime</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">uniform(0s,1s)</td>
+   <td>
+<p>interval between sending requests</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host3</a>.<a href="../../../inetmanet/doc/neddoc/inet.applications.ethernet.EtherAppCli.html">cli</a>.reqLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">100B</td>
+   <td>
+<p>length of request packets</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host3</a>.<a href="../../../inetmanet/doc/neddoc/inet.applications.ethernet.EtherAppCli.html">cli</a>.respLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1KB</td>
+   <td>
+<p>length of response packets</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host3</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.promiscuous</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">false</td>
+   <td>
+<p>if true, all packets are received, otherwise only the
+ones with matching destination MAC address</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host3</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.address</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"auto"</td>
+   <td>
+<p>MAC address as hex string (12 hex digits), or
+"auto". "auto" values will be replaced by
+a generated MAC address in init stage 0.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host3</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.txrate</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">100Mbps</td>
+   <td>
+<p>maximum data rate supported by this station (bit/s);
+actually chosen speed may be lower due to auto-
+configuration. 0 means fully auto-configured.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host3</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.duplexEnabled</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">true</td>
+   <td>
+<p>whether duplex mode can be enabled or not; whether
+MAC will actually use duplex mode depends on the result
+of the auto-configuration process (duplex is only
+possible with DTE-to-DTE connection).</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host3</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.txQueueLimit</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1000</td>
+   <td>
+<p>maximum number of frames queued up for transmission;
+additional frames are dropped. Only used if queueModule==""</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host3</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.mtu</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1500</td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host4</a>.<a href="../../../inetmanet/doc/neddoc/inet.applications.ethernet.EtherAppCli.html">cli</a>.destAddress</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">""</td>
+   <td>
+<p>destination MAC address, or module path name of destination station; empty means off</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host4</a>.<a href="../../../inetmanet/doc/neddoc/inet.applications.ethernet.EtherAppCli.html">cli</a>.startTime</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">this.waitTime</td>
+   <td>
+<p>time of sending the first request</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host4</a>.<a href="../../../inetmanet/doc/neddoc/inet.applications.ethernet.EtherAppCli.html">cli</a>.waitTime</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">uniform(0s,1s)</td>
+   <td>
+<p>interval between sending requests</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host4</a>.<a href="../../../inetmanet/doc/neddoc/inet.applications.ethernet.EtherAppCli.html">cli</a>.reqLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">100B</td>
+   <td>
+<p>length of request packets</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host4</a>.<a href="../../../inetmanet/doc/neddoc/inet.applications.ethernet.EtherAppCli.html">cli</a>.respLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1KB</td>
+   <td>
+<p>length of response packets</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host4</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.promiscuous</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">false</td>
+   <td>
+<p>if true, all packets are received, otherwise only the
+ones with matching destination MAC address</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host4</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.address</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"auto"</td>
+   <td>
+<p>MAC address as hex string (12 hex digits), or
+"auto". "auto" values will be replaced by
+a generated MAC address in init stage 0.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host4</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.txrate</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">100Mbps</td>
+   <td>
+<p>maximum data rate supported by this station (bit/s);
+actually chosen speed may be lower due to auto-
+configuration. 0 means fully auto-configured.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host4</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.duplexEnabled</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">true</td>
+   <td>
+<p>whether duplex mode can be enabled or not; whether
+MAC will actually use duplex mode depends on the result
+of the auto-configuration process (duplex is only
+possible with DTE-to-DTE connection).</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host4</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.txQueueLimit</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1000</td>
+   <td>
+<p>maximum number of frames queued up for transmission;
+additional frames are dropped. Only used if queueModule==""</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host4</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.mtu</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1500</td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host2</a>.<a href="../../../inetmanet/doc/neddoc/inet.applications.ethernet.EtherAppCli.html">cli</a>.destAddress</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">""</td>
+   <td>
+<p>destination MAC address, or module path name of destination station; empty means off</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host2</a>.<a href="../../../inetmanet/doc/neddoc/inet.applications.ethernet.EtherAppCli.html">cli</a>.startTime</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">this.waitTime</td>
+   <td>
+<p>time of sending the first request</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host2</a>.<a href="../../../inetmanet/doc/neddoc/inet.applications.ethernet.EtherAppCli.html">cli</a>.waitTime</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">uniform(0s,1s)</td>
+   <td>
+<p>interval between sending requests</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host2</a>.<a href="../../../inetmanet/doc/neddoc/inet.applications.ethernet.EtherAppCli.html">cli</a>.reqLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">100B</td>
+   <td>
+<p>length of request packets</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host2</a>.<a href="../../../inetmanet/doc/neddoc/inet.applications.ethernet.EtherAppCli.html">cli</a>.respLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1KB</td>
+   <td>
+<p>length of response packets</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host2</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.promiscuous</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">false</td>
+   <td>
+<p>if true, all packets are received, otherwise only the
+ones with matching destination MAC address</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host2</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.address</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"auto"</td>
+   <td>
+<p>MAC address as hex string (12 hex digits), or
+"auto". "auto" values will be replaced by
+a generated MAC address in init stage 0.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host2</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.txrate</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">100Mbps</td>
+   <td>
+<p>maximum data rate supported by this station (bit/s);
+actually chosen speed may be lower due to auto-
+configuration. 0 means fully auto-configured.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host2</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.duplexEnabled</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">true</td>
+   <td>
+<p>whether duplex mode can be enabled or not; whether
+MAC will actually use duplex mode depends on the result
+of the auto-configuration process (duplex is only
+possible with DTE-to-DTE connection).</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host2</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.txQueueLimit</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1000</td>
+   <td>
+<p>maximum number of frames queued up for transmission;
+additional frames are dropped. Only used if queueModule==""</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="../../../inetmanet/doc/neddoc/inet.nodes.ethernet.EtherHost.html">host2</a>.<a href="../../../inetmanet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.mtu</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1500</td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.OLT.EPON_OLT.html">epon_olt</a>.<a href="PON.OLT.EPON_OLT_relay.html">epon_OLT_relay</a>.addressTableFile</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>set to empty string if not used</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.OLT.EPON_OLT.html">epon_olt</a>.<a href="PON.OLT.EPON_OLT_relay.html">epon_OLT_relay</a>.addressTableSize</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>max size of address table</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.OLT.EPON_OLT.html">epon_olt</a>.<a href="PON.OLT.EPON_OLT_relay.html">epon_OLT_relay</a>.agingTime</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>max idle time for address table entries
+(when it expires, entry is removed from the table)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.OLT.EPON_OLT.html">epon_olt</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.address</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"auto"</td>
+   <td>
+<p>MAC address as hex string (12 hex digits), or
+"auto". "auto" values will be replaced by
+a generated MAC address in init stage 0.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.OLT.EPON_OLT.html">epon_olt</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.txrate</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">100Mbps</td>
+   <td>
+<p>maximum data rate supported by this station (bit/s);
+actually chosen speed may be lower due to auto-
+configuration. 0 means fully auto-configured.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.OLT.EPON_OLT.html">epon_olt</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.duplexEnabled</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">true</td>
+   <td>
+<p>whether duplex mode can be enabled or not; whether
+MAC will actually use duplex mode depends on the result
+of the auto-configuration process (duplex is only
+possible with DTE-to-DTE connection).</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.OLT.EPON_OLT.html">epon_olt</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.txQueueLimit</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1000</td>
+   <td>
+<p>maximum number of frames queued up for transmission;
+additional frames are dropped. Only used if queueModule==""</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.OLT.EPON_OLT.html">epon_olt</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.queueModule</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">""</td>
+   <td>
+<p>name of optional external queue module</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.OLT.EPON_OLT.html">epon_olt</a>.<a href="../../../Vlans/doc/neddoc/Vlans.linklayer.EtherMacVlan.html">mac</a>.mtu</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1500</td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.OLT.EPON_OLT.html">epon_olt</a>.<a href="PON.OLT.OLT_IF.html">olt_if</a>.<a href="PON.common.EPON_mac.html">epon_mac</a>.address</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"auto"</td>
+   <td>
+<p>MAC address as hex string (12 hex digits), or
+"auto". "auto" values will be replaced by
+a generated MAC address in init stage 0.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.OLT.EPON_OLT.html">epon_olt</a>.<a href="PON.OLT.OLT_IF.html">olt_if</a>.<a href="PON.common.EPON_mac.html">epon_mac</a>.txQueueLimit</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">2</td>
+   <td>
+<p>maximum number of frames queued up for transmission;
+additional frames are dropped. Only used if queueModule==""
+The 2nd frame is used in case of changing registers with <a href="MPCP.html">MPCP</a>
+... sometimes 1 is already transmitted and the next <a href="MPCP.html">MPCP</a> decides 
+to transmitt again with the new times.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.OLT.EPON_OLT.html">epon_olt</a>.<a href="PON.OLT.OLT_IF.html">olt_if</a>.<a href="PON.common.EPON_mac.html">epon_mac</a>.queueModule</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">""</td>
+   <td>
+<p>name of optional external queue module</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.OLT.EPON_OLT.html">epon_olt</a>.<a href="PON.OLT.OLT_IF.html">olt_if</a>.<a href="PON.common.EPON_mac.html">epon_mac</a>.mtu</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1500</td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.OLT.EPON_OLT.html">epon_olt</a>.<a href="PON.OLT.OLT_IF.html">olt_if</a>.<a href="PON.OLT.OLT_Q_mgmt.html">olt_Q_mgmt</a>.slotLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.OLT.EPON_OLT.html">epon_olt</a>.<a href="PON.OLT.OLT_IF.html">olt_if</a>.<a href="PON.OLT.OLT_Q_mgmt.html">olt_Q_mgmt</a>.slotNumber</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.OLT.EPON_OLT.html">epon_olt</a>.<a href="PON.OLT.OLT_IF.html">olt_if</a>.<a href="PON.OLT.OLT_Q_mgmt.html">olt_Q_mgmt</a>.regTimeInt</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.OLT.EPON_OLT.html">epon_olt</a>.<a href="PON.OLT.OLT_IF.html">olt_if</a>.<a href="PON.OLT.OLT_Q_mgmt.html">olt_Q_mgmt</a>.regAckTimeOut</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.OLT.EPON_OLT.html">epon_olt</a>.<a href="PON.OLT.OLT_IF.html">olt_if</a>.<a href="PON.OLT.OLT_Q_mgmt.html">olt_Q_mgmt</a>.queueLimit</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="PON.OLT.EPON_OLT.html">epon_olt</a>.<a href="PON.OLT.OLT_IF.html">olt_if</a>.<a href="PON.OLT.OLT_Q_mgmt.html">olt_Q_mgmt</a>.datarateLimit</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>Limit the assigned bandwidth to scale down the simulation</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.common.ServiceConfig.html">serviceConfig</a>.services</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"DATA"</td>
+   <td>
+<p>Service Names (whatever you like here)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.common.ServiceConfig.html">serviceConfig</a>.srvPrior</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"1.0"</td>
+   <td>
+<p>Service priority. Total sum must be 1</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.common.ServiceConfig.html">serviceConfig</a>.vlanMap</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"0"</td>
+   <td>
+<p>Vlan map</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.common.ServiceConfig.html">serviceConfig</a>.msrPerFlow</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"1000000"</td>
+   <td>
+<p>MSR per flow, default 1Mbps (-1 = Unlimited)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="PON.common.ServiceConfig.html">serviceConfig</a>.mrrPerFlow</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"1000000"</td>
+   <td>
+<p>MRR per flow, default 1Mbps (-1 = Unlimited)</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">network</span><span style="color: #000000; "> </span><span style="color: #000000; ">pon_srv</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">types</span><span style="color: #000000; ">:
+        </span><span style="color: #800000; font-weight: bold; ">channel</span><span style="color: #000000; "> </span><span style="color: #000000; ">GFX</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">DatarateChannel</span><span style="color: #000000; ">
+        {
+            </span><span style="color: #000000; ">datarate</span><span style="color: #000000; "> = </span><span style="color: #008000; ">1</span><span style="color: #000000; ">Gbps</span><span style="color: #000000; ">;
+        }
+    </span><span style="color: #800000; font-weight: bold; ">submodules</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; ">pon_Splitter</span><span style="color: #000000; ">: </span><span style="color: #000000; ">PON_Splitter</span><span style="color: #000000; "> {
+            </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=230,142&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">epon_onu</span><span style="color: #000000; ">: </span><span style="color: #000000; ">EPON_ONU</span><span style="color: #000000; "> {
+            </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=432,66&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">host1</span><span style="color: #000000; ">: </span><span style="color: #000000; ">EtherHost</span><span style="color: #000000; "> {
+            </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=538,66&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">epon_onu3</span><span style="color: #000000; ">: </span><span style="color: #000000; ">EPON_ONU</span><span style="color: #000000; "> {
+            </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=432,185&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">epon_onu2</span><span style="color: #000000; ">: </span><span style="color: #000000; ">EPON_ONU</span><span style="color: #000000; "> {
+            </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=432,123&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">host3</span><span style="color: #000000; ">: </span><span style="color: #000000; ">EtherHost</span><span style="color: #000000; "> {
+            </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=538,130&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">host4</span><span style="color: #000000; ">: </span><span style="color: #000000; ">EtherHost</span><span style="color: #000000; "> {
+            </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=538,192&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">host2</span><span style="color: #000000; ">: </span><span style="color: #000000; ">EtherHost</span><span style="color: #000000; "> {
+            </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=86,72&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">epon_olt</span><span style="color: #000000; ">: </span><span style="color: #000000; ">EPON_OLT</span><span style="color: #000000; "> {
+            </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=141,142&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">serviceConfig</span><span style="color: #000000; ">: </span><span style="color: #000000; ">ServiceConfig</span><span style="color: #000000; "> {
+            </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=221,34&quot;</span><span style="color: #000000; ">);
+        }
+    </span><span style="color: #800000; font-weight: bold; ">connections</span><span style="color: #000000; ">:
+
+        </span><span style="color: #808080; font-style: italic; ">// to splitter
+</span><span style="color: #000000; ">        </span><span style="color: #000000; ">epon_olt</span><span style="color: #000000; ">.</span><span style="color: #000000; ">epon</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">GFX</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">pon_Splitter</span><span style="color: #000000; ">.</span><span style="color: #000000; ">portu</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">pon_Splitter</span><span style="color: #000000; ">.</span><span style="color: #000000; ">portg</span><span style="color: #000000; ">++ </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">GFX</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">epon_onu</span><span style="color: #000000; ">.</span><span style="color: #000000; ">epon</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">pon_Splitter</span><span style="color: #000000; ">.</span><span style="color: #000000; ">portg</span><span style="color: #000000; ">++ </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">GFX</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">epon_onu2</span><span style="color: #000000; ">.</span><span style="color: #000000; ">epon</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">pon_Splitter</span><span style="color: #000000; ">.</span><span style="color: #000000; ">portg</span><span style="color: #000000; ">++ </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">GFX</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">epon_onu3</span><span style="color: #000000; ">.</span><span style="color: #000000; ">epon</span><span style="color: #000000; ">;
+
+        </span><span style="color: #808080; font-style: italic; ">// Hosts
+</span><span style="color: #000000; ">        </span><span style="color: #000000; ">epon_onu</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">DatarateChannel</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">host1</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">epon_onu2</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">DatarateChannel</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">host3</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">epon_onu3</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">DatarateChannel</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">host4</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">epon_olt</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">DatarateChannel</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">host2</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">;
+
+}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

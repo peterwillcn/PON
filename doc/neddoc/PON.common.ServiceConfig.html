@@ -1,0 +1,184 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Simple Module <i>ServiceConfig</i></h2>
+<b>Package:</b> PON.common<br/><b>File: <a href="src-common-ServiceConfig.ned.html">src/common/ServiceConfig.ned</a></b><br/><p><a href="../doxy/classServiceConfig.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>A module to keep track of multi-service
+scenarios. Here we register the services
+available, the priority of each service and
+any other needed information. Since we are working 
+with VLANs - we map traffic from various 
+technologies into different vlans - we are
+going to register this too. Finally for the access
+network we have a per client/flow configuration.
+This is the MSR (Maximum Sustained Rate) used mainly
+in WiMax modules.</p>
+<img src="PON.common.ServiceConfig-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="PON.common.ServiceConfig.html" title="ServiceConfig" alt="ServiceConfig" coords="0,0,128,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+<img src="PON.common.ServiceConfig-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" id="node1" href="PON.common.ServiceConfig.html" title="Simple Module ServiceConfig" alt="" coords="227,83,331,111">
+<area shape="rect" id="node2" href="NonPollingPon.html" title="Network NonPollingPon" alt="" coords="5,6,112,34">
+<area shape="rect" id="node4" href="PollingPon.html" title="Network PollingPon" alt="" coords="136,6,219,34">
+<area shape="rect" id="node6" href="pon_srv.html" title="Network pon_srv" alt="" coords="243,6,315,34">
+<area shape="rect" id="node8" href="SingleONU.html" title="Network SingleONU" alt="" coords="339,6,427,34">
+<area shape="rect" id="node10" href="SingleONU2.html" title="Network SingleONU2" alt="" coords="451,6,544,34">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+<img src="PON.common.ServiceConfig-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" id="node1" href="PON.common.ServiceConfig.html" title="Simple Module ServiceConfig" alt="" coords="5,6,109,34">
+</map>
+<h3 class="subtitle">Networks:</h3>
+<table>
+<tr>
+   <td>
+      <a href="NonPollingPon.html">NonPollingPon</a>
+      <i> (network)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="PollingPon.html">PollingPon</a>
+      <i> (network)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="pon_srv.html">pon_srv</a>
+      <i> (network)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="SingleONU.html">SingleONU</a>
+      <i> (network)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="SingleONU2.html">SingleONU2</a>
+      <i> (network)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">services</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"DATA"</td>
+   <td>
+<p>Service Names (whatever you like here)</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">srvPrior</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"1.0"</td>
+   <td>
+<p>Service priority. Total sum must be 1</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">vlanMap</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"0"</td>
+   <td>
+<p>Vlan map</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">msrPerFlow</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"1000000"</td>
+   <td>
+<p>MSR per flow, default 1Mbps (-1 = Unlimited)</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">mrrPerFlow</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"1000000"</td>
+   <td>
+<p>MRR per flow, default 1Mbps (-1 = Unlimited)</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">display</td>
+   <td width="100"><i>i=block/classifier</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// A module to keep track of multi-service
+// scenarios. Here we register the services
+// available, the priority of each service and
+// any other needed information. Since we are working 
+// with VLANs - we map traffic from various 
+// technologies into different vlans - we are
+// going to register this too. Finally for the access
+// network we have a per client/flow configuration.
+// This is the MSR (Maximum Sustained Rate) used mainly
+// in WiMax modules.
+//
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">ServiceConfig</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">services</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;DATA&quot;</span><span style="color: #000000; ">);		</span><span style="color: #808080; font-style: italic; ">// Service Names (whatever you like here)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">srvPrior</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;1.0&quot;</span><span style="color: #000000; ">);		</span><span style="color: #808080; font-style: italic; ">// Service priority. Total sum must be 1
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">vlanMap</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;0&quot;</span><span style="color: #000000; ">); 			</span><span style="color: #808080; font-style: italic; ">// Vlan map
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">msrPerFlow</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;1000000&quot;</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// MSR per flow, default 1Mbps (-1 = Unlimited)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">mrrPerFlow</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;1000000&quot;</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// MRR per flow, default 1Mbps (-1 = Unlimited)
+</span><span style="color: #000000; ">
+        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;i=block/classifier&quot;</span><span style="color: #000000; ">);
+}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

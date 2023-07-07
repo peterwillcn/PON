@@ -1,0 +1,146 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Packet <i>MPCP</i></h2>
+<b>File: <a href="src-common-EPON_messages.msg.html">src/common/EPON_messages.msg</a></b><br/><p><a href="../doxy/classMPCP.html" target="mainframe"><b>C++ definition</b></a></p>
+<p>(no description)</p><h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+<img src="MPCP-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" id="node1" href="MPCP.html" title="Packet MPCP" alt="" coords="5,6,77,34">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+<img src="MPCP-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" id="node1" href="MPCP.html" title="Packet MPCP" alt="" coords="267,83,339,111">
+<area shape="rect" id="node4" href="MPCPGate.html" title="Packet MPCPGate" alt="" coords="5,161,93,189">
+<area shape="rect" id="node6" href="MPCPRegAck.html" title="Packet MPCPRegAck" alt="" coords="117,161,224,189">
+<area shape="rect" id="node8" href="MPCPRegister.html" title="Packet MPCPRegister" alt="" coords="248,161,357,189">
+<area shape="rect" id="node10" href="MPCPRegReq.html" title="Packet MPCPRegReq" alt="" coords="381,161,491,189">
+<area shape="rect" id="node12" href="MPCPReport.html" title="Packet MPCPReport" alt="" coords="515,161,613,189">
+<area shape="rect" id="node2" href="../../../inetmanet/doc/neddoc/EthernetIIFrame.html" title="Packet EthernetIIFrame" alt="" coords="245,6,360,34">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table>
+<tr>
+   <td>
+      <a href="../../../inetmanet/doc/neddoc/EthernetIIFrame.html">EthernetIIFrame</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+
+<p>Ethernet II headers contain a 16-bit EtherType to identify
+the encapsulated protocol.</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Known subclasses:</h3>
+<table>
+<tr>
+   <td>
+      <a href="MPCPGate.html">MPCPGate</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="MPCPRegAck.html">MPCPRegAck</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="MPCPRegister.html">MPCPRegister</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="MPCPRegReq.html">MPCPRegReq</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="MPCPReport.html">MPCPReport</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Fields:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<tr class="inherited">
+   <td width="150">dest</td>
+   <td width="100">
+      <i>
+MACAddress</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">etherType</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">ts</td>
+   <td width="100">
+      <i>
+uint32_t</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">src</td>
+   <td width="100">
+      <i>
+MACAddress</i>
+   </td>
+   <td>
+<p>MessageId id; -- uncomment for tracing frames</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">opcode</td>
+   <td width="100">
+      <i>
+uint16_t</i>
+   </td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #000000; "> </span><span style="color: #000000; ">MPCP</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">EthernetIIFrame</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000000; ">uint16_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">opcode</span><span style="color: #000000; ">;
+    </span><span style="color: #000000; ">uint32_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">ts</span><span style="color: #000000; ">;
+}
+
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

@@ -1,0 +1,4110 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+<tagfile>
+  <compound kind="file">
+    <name>CopyableQueueCVectors.cc</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/common/</path>
+    <filename>CopyableQueueCVectors_8cc</filename>
+    <includes id="CopyableQueueCVectors_8h" name="CopyableQueueCVectors.h" local="yes" imported="no">CopyableQueueCVectors.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>CopyableQueueCVectors.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/common/</path>
+    <filename>CopyableQueueCVectors_8h</filename>
+    <class kind="class">CopyableQueueCVectors</class>
+  </compound>
+  <compound kind="file">
+    <name>EPON_CtrlInfo.cc</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/common/</path>
+    <filename>EPON__CtrlInfo_8cc</filename>
+    <includes id="EPON__CtrlInfo_8h" name="EPON_CtrlInfo.h" local="yes" imported="no">EPON_CtrlInfo.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>EPON_CtrlInfo.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/common/</path>
+    <filename>EPON__CtrlInfo_8h</filename>
+    <class kind="class">EPON_LLidCtrlInfo</class>
+    <member kind="variable">
+      <type>const uint16_t</type>
+      <name>LLID_EPON_BC</name>
+      <anchorfile>EPON__CtrlInfo_8h.html</anchorfile>
+      <anchor>a9c30e6b907d649b65497274b020a3537</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>EPON_mac.cc</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/common/</path>
+    <filename>EPON__mac_8cc</filename>
+    <includes id="EPON__mac_8h" name="EPON_mac.h" local="yes" imported="no">EPON_mac.h</includes>
+    <includes id="EPON__CtrlInfo_8h" name="EPON_CtrlInfo.h" local="yes" imported="no">EPON_CtrlInfo.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>EPON__mac_8cc.html</anchorfile>
+      <anchor>ad9edac39fbab5e1a40671cc82fc1e9bd</anchor>
+      <arglist>(EPON_mac)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>EPON_mac.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/common/</path>
+    <filename>EPON__mac_8h</filename>
+    <includes id="EPON__messages__m_8h" name="EPON_messages_m.h" local="yes" imported="no">EPON_messages_m.h</includes>
+    <includes id="EPON__CtrlInfo_8h" name="EPON_CtrlInfo.h" local="yes" imported="no">EPON_CtrlInfo.h</includes>
+    <class kind="class">EPON_mac</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>SLOT_SYNC_CODE</name>
+      <anchorfile>EPON__mac_8h.html</anchorfile>
+      <anchor>aedebaaf8dac06c0afce86ec394176c12</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>EPON_PREAMBLE_BYTES</name>
+      <anchorfile>EPON__mac_8h.html</anchorfile>
+      <anchor>a3f4fd28a4e1ca4668edf923b7dc924d9</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>EPON_messages_m.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/common/</path>
+    <filename>EPON__messages__m_8h</filename>
+    <class kind="class">SyncCode</class>
+    <class kind="class">EtherFrameWithLLID</class>
+    <class kind="class">MPCP</class>
+    <class kind="class">MPCPGate</class>
+    <class kind="class">MPCPReport</class>
+    <class kind="class">MPCPRegReq</class>
+    <class kind="class">MPCPRegister</class>
+    <class kind="class">MPCPRegAck</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>MSGC_VERSION</name>
+      <anchorfile>EPON__messages__m_8h.html</anchorfile>
+      <anchor>a77f5ea746b531cbdbc322a93741e33a6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>doPacking</name>
+      <anchorfile>EPON__messages__m_8h.html</anchorfile>
+      <anchor>ae3f67b9063968f8d16b2bf6fd2d11bdc</anchor>
+      <arglist>(cCommBuffer *b, SyncCode &amp;obj)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>doUnpacking</name>
+      <anchorfile>EPON__messages__m_8h.html</anchorfile>
+      <anchor>a4cd60eb35aaa55823d507d65a4f51021</anchor>
+      <arglist>(cCommBuffer *b, SyncCode &amp;obj)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>doPacking</name>
+      <anchorfile>EPON__messages__m_8h.html</anchorfile>
+      <anchor>a66d8cb11bebc4427ba31103435d77c51</anchor>
+      <arglist>(cCommBuffer *b, EtherFrameWithLLID &amp;obj)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>doUnpacking</name>
+      <anchorfile>EPON__messages__m_8h.html</anchorfile>
+      <anchor>ad1b415afefb040c92371f2564dd0c3ec</anchor>
+      <arglist>(cCommBuffer *b, EtherFrameWithLLID &amp;obj)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>doPacking</name>
+      <anchorfile>EPON__messages__m_8h.html</anchorfile>
+      <anchor>ac305e6f4732c6bc5345dbf0c325fca7a</anchor>
+      <arglist>(cCommBuffer *b, MPCP &amp;obj)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>doUnpacking</name>
+      <anchorfile>EPON__messages__m_8h.html</anchorfile>
+      <anchor>a335b32e87ebf78bbd9f47cfd0d89b762</anchor>
+      <arglist>(cCommBuffer *b, MPCP &amp;obj)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>doPacking</name>
+      <anchorfile>EPON__messages__m_8h.html</anchorfile>
+      <anchor>aa34c6c4ebdbfbe07201980de83185383</anchor>
+      <arglist>(cCommBuffer *b, MPCPGate &amp;obj)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>doUnpacking</name>
+      <anchorfile>EPON__messages__m_8h.html</anchorfile>
+      <anchor>a52e242e8452e42d79b0e87c5a1f02a62</anchor>
+      <arglist>(cCommBuffer *b, MPCPGate &amp;obj)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>doPacking</name>
+      <anchorfile>EPON__messages__m_8h.html</anchorfile>
+      <anchor>ac759209145c4dadc76251021da7f35ee</anchor>
+      <arglist>(cCommBuffer *b, MPCPReport &amp;obj)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>doUnpacking</name>
+      <anchorfile>EPON__messages__m_8h.html</anchorfile>
+      <anchor>ab40a95a6e858c5735de529dad02ec853</anchor>
+      <arglist>(cCommBuffer *b, MPCPReport &amp;obj)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>doPacking</name>
+      <anchorfile>EPON__messages__m_8h.html</anchorfile>
+      <anchor>a3d88da0c43e83f1bed0722ad4a69e07c</anchor>
+      <arglist>(cCommBuffer *b, MPCPRegReq &amp;obj)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>doUnpacking</name>
+      <anchorfile>EPON__messages__m_8h.html</anchorfile>
+      <anchor>a90e9aca7bb7af72fc646f87ce1200776</anchor>
+      <arglist>(cCommBuffer *b, MPCPRegReq &amp;obj)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>doPacking</name>
+      <anchorfile>EPON__messages__m_8h.html</anchorfile>
+      <anchor>ac92c6ecd58d992a504d8f27f6c6672c0</anchor>
+      <arglist>(cCommBuffer *b, MPCPRegister &amp;obj)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>doUnpacking</name>
+      <anchorfile>EPON__messages__m_8h.html</anchorfile>
+      <anchor>ad525cf04920b88a825a9e0a87c5fd1d6</anchor>
+      <arglist>(cCommBuffer *b, MPCPRegister &amp;obj)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>doPacking</name>
+      <anchorfile>EPON__messages__m_8h.html</anchorfile>
+      <anchor>a6d20be4a1771aadff37c22c8d2c2885f</anchor>
+      <arglist>(cCommBuffer *b, MPCPRegAck &amp;obj)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>doUnpacking</name>
+      <anchorfile>EPON__messages__m_8h.html</anchorfile>
+      <anchor>a50f616d1d80d13188e99ecfd3b168f6d</anchor>
+      <arglist>(cCommBuffer *b, MPCPRegAck &amp;obj)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>EPON_OLT_relayDefault.cc</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/OLT/</path>
+    <filename>EPON__OLT__relayDefault_8cc</filename>
+    <includes id="EPON__OLT__relayDefault_8h" name="EPON_OLT_relayDefault.h" local="yes" imported="no">EPON_OLT_relayDefault.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>EPON__OLT__relayDefault_8cc.html</anchorfile>
+      <anchor>aa5f4680dad65c9c010bfcd8530a6f188</anchor>
+      <arglist>(EPON_OLT_relayDefault)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>EPON_OLT_relayDefault.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/OLT/</path>
+    <filename>EPON__OLT__relayDefault_8h</filename>
+    <includes id="EPON__CtrlInfo_8h" name="EPON_CtrlInfo.h" local="yes" imported="no">EPON_CtrlInfo.h</includes>
+    <includes id="ServiceConfig_8h" name="ServiceConfig.h" local="yes" imported="no">ServiceConfig.h</includes>
+    <includes id="ONUTable_8h" name="ONUTable.h" local="yes" imported="no">ONUTable.h</includes>
+    <class kind="class">EPON_OLT_relayDefault</class>
+  </compound>
+  <compound kind="file">
+    <name>EPON_OLT_vlanBridgeRelay.cc</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/OLT/</path>
+    <filename>EPON__OLT__vlanBridgeRelay_8cc</filename>
+    <includes id="EPON__OLT__vlanBridgeRelay_8h" name="EPON_OLT_vlanBridgeRelay.h" local="yes" imported="no">EPON_OLT_vlanBridgeRelay.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>EPON__OLT__vlanBridgeRelay_8cc.html</anchorfile>
+      <anchor>ae49796d76c910f4a0b3934957b9ed57e</anchor>
+      <arglist>(EPON_OLT_vlanBridgeRelay)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>EPON_OLT_vlanBridgeRelay.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/OLT/</path>
+    <filename>EPON__OLT__vlanBridgeRelay_8h</filename>
+    <includes id="EPON__OLT__relayDefault_8h" name="EPON_OLT_relayDefault.h" local="yes" imported="no">EPON_OLT_relayDefault.h</includes>
+    <includes id="EPON__CtrlInfo_8h" name="EPON_CtrlInfo.h" local="yes" imported="no">EPON_CtrlInfo.h</includes>
+    <includes id="EPON__messages__m_8h" name="EPON_messages_m.h" local="yes" imported="no">EPON_messages_m.h</includes>
+    <includes id="ServiceConfig_8h" name="ServiceConfig.h" local="yes" imported="no">ServiceConfig.h</includes>
+    <class kind="class">EPON_OLT_vlanBridgeRelay</class>
+  </compound>
+  <compound kind="file">
+    <name>EPON_ONU_relayDefault.cc</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/ONU/</path>
+    <filename>EPON__ONU__relayDefault_8cc</filename>
+    <includes id="EPON__ONU__relayDefault_8h" name="EPON_ONU_relayDefault.h" local="yes" imported="no">EPON_ONU_relayDefault.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>EPON__ONU__relayDefault_8cc.html</anchorfile>
+      <anchor>a477c666733ee0337e2a496401aa33a4d</anchor>
+      <arglist>(EPON_ONU_relayDefault)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>EPON_ONU_relayDefault.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/ONU/</path>
+    <filename>EPON__ONU__relayDefault_8h</filename>
+    <includes id="EPON__CtrlInfo_8h" name="EPON_CtrlInfo.h" local="yes" imported="no">EPON_CtrlInfo.h</includes>
+    <includes id="EPON__messages__m_8h" name="EPON_messages_m.h" local="yes" imported="no">EPON_messages_m.h</includes>
+    <includes id="ServiceConfig_8h" name="ServiceConfig.h" local="yes" imported="no">ServiceConfig.h</includes>
+    <class kind="class">EPON_ONU_relayDefault</class>
+  </compound>
+  <compound kind="file">
+    <name>EPON_ONU_vlanBridgeRelay.cc</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/ONU/</path>
+    <filename>EPON__ONU__vlanBridgeRelay_8cc</filename>
+    <includes id="EPON__ONU__vlanBridgeRelay_8h" name="EPON_ONU_vlanBridgeRelay.h" local="yes" imported="no">EPON_ONU_vlanBridgeRelay.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>EPON__ONU__vlanBridgeRelay_8cc.html</anchorfile>
+      <anchor>a9eff310976849695682234babaaf727f</anchor>
+      <arglist>(EPON_ONU_vlanBridgeRelay)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>EPON_ONU_vlanBridgeRelay.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/ONU/</path>
+    <filename>EPON__ONU__vlanBridgeRelay_8h</filename>
+    <includes id="EPON__ONU__relayDefault_8h" name="EPON_ONU_relayDefault.h" local="yes" imported="no">EPON_ONU_relayDefault.h</includes>
+    <includes id="EPON__CtrlInfo_8h" name="EPON_CtrlInfo.h" local="yes" imported="no">EPON_CtrlInfo.h</includes>
+    <includes id="EPON__messages__m_8h" name="EPON_messages_m.h" local="yes" imported="no">EPON_messages_m.h</includes>
+    <includes id="ServiceConfig_8h" name="ServiceConfig.h" local="yes" imported="no">ServiceConfig.h</includes>
+    <class kind="class">EPON_ONU_vlanBridgeRelay</class>
+  </compound>
+  <compound kind="file">
+    <name>MPCP_codes.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/common/</path>
+    <filename>MPCP__codes_8h</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>MPCP_GATE</name>
+      <anchorfile>MPCP__codes_8h.html</anchorfile>
+      <anchor>a190716814784e1e13cfd09ef6e773f5d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>MPCP_REPORT</name>
+      <anchorfile>MPCP__codes_8h.html</anchorfile>
+      <anchor>ac549493bf4e9303c1e0e090133f065ec</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>MPCP_REGREQ</name>
+      <anchorfile>MPCP__codes_8h.html</anchorfile>
+      <anchor>a312e8c091a60aceac2ce2736d703fde5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>MPCP_REGISTER</name>
+      <anchorfile>MPCP__codes_8h.html</anchorfile>
+      <anchor>ab52e72f4e759864e6bc6792412caa7f5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>MPCP_REGACK</name>
+      <anchorfile>MPCP__codes_8h.html</anchorfile>
+      <anchor>a5c088b9851d17a5099e83549071388cd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>MPCP_HEADER_LEN</name>
+      <anchorfile>MPCP__codes_8h.html</anchorfile>
+      <anchor>a53a5bdadb1af2c43add7d5e29f2b6d11</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>MPCP_LLID_LEN</name>
+      <anchorfile>MPCP__codes_8h.html</anchorfile>
+      <anchor>ada6dcf058a919459762e5154ea64f23b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>MPCP_TIMERS_LEN</name>
+      <anchorfile>MPCP__codes_8h.html</anchorfile>
+      <anchor>a119292575b8af22648a8d1ebfae4c2cd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>MPCP_SLOTINFO_LEN</name>
+      <anchorfile>MPCP__codes_8h.html</anchorfile>
+      <anchor>a53fb660b1ef07c3453c9e5dc9bea14b3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>MPCP_LIST_LEN</name>
+      <anchorfile>MPCP__codes_8h.html</anchorfile>
+      <anchor>ac5c8425296d0d597cc31602ae00ee1c1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>MPCP_ACK_LEN</name>
+      <anchorfile>MPCP__codes_8h.html</anchorfile>
+      <anchor>a58bc0251d47981d049b474ea3f3cdee9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const uint16_t</type>
+      <name>MPCP_TYPE</name>
+      <anchorfile>MPCP__codes_8h.html</anchorfile>
+      <anchor>a01d93522186165aff8e9d9907b04aec3</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>MPCPTools.cc</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/common/</path>
+    <filename>MPCPTools_8cc</filename>
+    <includes id="MPCPTools_8h" name="MPCPTools.h" local="yes" imported="no">MPCPTools.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>MPCPTools.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/common/</path>
+    <filename>MPCPTools_8h</filename>
+    <includes id="EPON__messages__m_8h" name="EPON_messages_m.h" local="yes" imported="no">EPON_messages_m.h</includes>
+    <class kind="class">MPCPTools</class>
+    <member kind="variable">
+      <type>const uint32_t</type>
+      <name>MPCP_CLOCK_MAX</name>
+      <anchorfile>MPCPTools_8h.html</anchorfile>
+      <anchor>a7a11b1805a8a4c73e5b844a12b98a531</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>OLT_QPL_RR.cc</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/OLT/</path>
+    <filename>OLT__QPL__RR_8cc</filename>
+    <includes id="OLT__QPL__RR_8h" name="OLT_QPL_RR.h" local="yes" imported="no">OLT_QPL_RR.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>OLT__QPL__RR_8cc.html</anchorfile>
+      <anchor>a3369d7eab267a80dca5c64ff5be9880c</anchor>
+      <arglist>(OLT_QPL_RR)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>OLT_QPL_RR.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/OLT/</path>
+    <filename>OLT__QPL__RR_8h</filename>
+    <includes id="OLTQPerLLiDBase_8h" name="OLTQPerLLiDBase.h" local="yes" imported="no">OLTQPerLLiDBase.h</includes>
+    <class kind="class">OLT_QPL_RR</class>
+  </compound>
+  <compound kind="file">
+    <name>OLTMacCtl_NP.cc</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/OLT/</path>
+    <filename>OLTMacCtl__NP_8cc</filename>
+    <includes id="OLTMacCtl__NP_8h" name="OLTMacCtl_NP.h" local="yes" imported="no">OLTMacCtl_NP.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>OLTMacCtl__NP_8cc.html</anchorfile>
+      <anchor>a68658de096eecaef9922c04e6775f0ce</anchor>
+      <arglist>(OLTMacCtl_NP)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>OLTMacCtl_NP.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/OLT/</path>
+    <filename>OLTMacCtl__NP_8h</filename>
+    <includes id="MPCPTools_8h" name="MPCPTools.h" local="yes" imported="no">MPCPTools.h</includes>
+    <includes id="EPON__messages__m_8h" name="EPON_messages_m.h" local="yes" imported="no">EPON_messages_m.h</includes>
+    <includes id="MPCP__codes_8h" name="MPCP_codes.h" local="yes" imported="no">MPCP_codes.h</includes>
+    <class kind="class">OLTMacCtl_NP</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>TXENDMSG</name>
+      <anchorfile>OLTMacCtl__NP_8h.html</anchorfile>
+      <anchor>a6471ede2ce4a57ea91e04fb97d558c80</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>WAKEUPMSG</name>
+      <anchorfile>OLTMacCtl__NP_8h.html</anchorfile>
+      <anchor>a3593b1b91fec6813d3d03abfee96f8e7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>TX_SENDING</name>
+      <anchorfile>OLTMacCtl__NP_8h.html</anchorfile>
+      <anchor>a972946de9120e4fa114e46e33de9a968</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>TX_IDLE</name>
+      <anchorfile>OLTMacCtl__NP_8h.html</anchorfile>
+      <anchor>a8466586b863fc4b1722eda703698d847</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>OLTQPerLLiDBase.cc</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/OLT/</path>
+    <filename>OLTQPerLLiDBase_8cc</filename>
+    <includes id="OLTQPerLLiDBase_8h" name="OLTQPerLLiDBase.h" local="yes" imported="no">OLTQPerLLiDBase.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>OLTQPerLLiDBase.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/OLT/</path>
+    <filename>OLTQPerLLiDBase_8h</filename>
+    <includes id="ONUTable_8h" name="ONUTable.h" local="yes" imported="no">ONUTable.h</includes>
+    <includes id="EPON__messages__m_8h" name="EPON_messages_m.h" local="yes" imported="no">EPON_messages_m.h</includes>
+    <includes id="MPCP__codes_8h" name="MPCP_codes.h" local="yes" imported="no">MPCP_codes.h</includes>
+    <includes id="MPCPTools_8h" name="MPCPTools.h" local="yes" imported="no">MPCPTools.h</includes>
+    <includes id="ServiceConfig_8h" name="ServiceConfig.h" local="yes" imported="no">ServiceConfig.h</includes>
+    <includes id="EPON__CtrlInfo_8h" name="EPON_CtrlInfo.h" local="yes" imported="no">EPON_CtrlInfo.h</includes>
+    <includes id="CopyableQueueCVectors_8h" name="CopyableQueueCVectors.h" local="yes" imported="no">CopyableQueueCVectors.h</includes>
+    <class kind="class">QueuePerMacLLid</class>
+    <class kind="class">OLTQPerLLiDBase</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>ONUPENACK</name>
+      <anchorfile>OLTQPerLLiDBase_8h.html</anchorfile>
+      <anchor>a0ab1b6f17ea122deb8aae1d585655dcd</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>OLTQPerLLiDBase_P.cc</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/OLT/</path>
+    <filename>OLTQPerLLiDBase__P_8cc</filename>
+    <includes id="OLTQPerLLiDBase__P_8h" name="OLTQPerLLiDBase_P.h" local="yes" imported="no">OLTQPerLLiDBase_P.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>OLTQPerLLiDBase__P_8cc.html</anchorfile>
+      <anchor>a600c2233a406e8e591f5e6ee885ef681</anchor>
+      <arglist>(OLTQPerLLiDBase_P)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>OLTQPerLLiDBase_P.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/OLT/</path>
+    <filename>OLTQPerLLiDBase__P_8h</filename>
+    <includes id="OLT__QPL__RR_8h" name="OLT_QPL_RR.h" local="yes" imported="no">OLT_QPL_RR.h</includes>
+    <class kind="class">OLTQPerLLiDBase_P</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>SEND_GATE</name>
+      <anchorfile>OLTQPerLLiDBase__P_8h.html</anchorfile>
+      <anchor>add707df4392dc192942570c4043db50d</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ONU_QPL_RR.cc</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/ONU/</path>
+    <filename>ONU__QPL__RR_8cc</filename>
+    <includes id="ONU__QPL__RR_8h" name="ONU_QPL_RR.h" local="yes" imported="no">ONU_QPL_RR.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>ONU__QPL__RR_8cc.html</anchorfile>
+      <anchor>a99854dc09603745beea1521552223c6f</anchor>
+      <arglist>(ONU_QPL_RR)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ONU_QPL_RR.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/ONU/</path>
+    <filename>ONU__QPL__RR_8h</filename>
+    <includes id="ONUQPerLLiDBase_8h" name="ONUQPerLLiDBase.h" local="yes" imported="no">ONUQPerLLiDBase.h</includes>
+    <class kind="class">ONU_QPL_RR</class>
+  </compound>
+  <compound kind="file">
+    <name>ONUMacCtl_NP.cc</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/ONU/</path>
+    <filename>ONUMacCtl__NP_8cc</filename>
+    <includes id="ONUMacCtl__NP_8h" name="ONUMacCtl_NP.h" local="yes" imported="no">ONUMacCtl_NP.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>ONUMacCtl__NP_8cc.html</anchorfile>
+      <anchor>a0ef434724c95dcb7c1cb5325174cabe8</anchor>
+      <arglist>(ONUMacCtl_NP)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ONUMacCtl_NP.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/ONU/</path>
+    <filename>ONUMacCtl__NP_8h</filename>
+    <includes id="MPCP__codes_8h" name="MPCP_codes.h" local="yes" imported="no">MPCP_codes.h</includes>
+    <includes id="EPON__messages__m_8h" name="EPON_messages_m.h" local="yes" imported="no">EPON_messages_m.h</includes>
+    <includes id="MPCPTools_8h" name="MPCPTools.h" local="yes" imported="no">MPCPTools.h</includes>
+    <includes id="EPON__mac_8h" name="EPON_mac.h" local="yes" imported="no">EPON_mac.h</includes>
+    <includes id="ONUMacCtlBase_8h" name="ONUMacCtlBase.h" local="yes" imported="no">ONUMacCtlBase.h</includes>
+    <class kind="class">ONUMacCtl_NP</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>STOPTXMSG</name>
+      <anchorfile>ONUMacCtl__NP_8h.html</anchorfile>
+      <anchor>a802a25fb2e007ec326e21f3ac6b0600a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SFTSTRMSG</name>
+      <anchorfile>ONUMacCtl__NP_8h.html</anchorfile>
+      <anchor>a53dfda11c1065ac57d14d980afd957bc</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ONUMacCtl_P.cc</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/ONU/</path>
+    <filename>ONUMacCtl__P_8cc</filename>
+    <includes id="ONUMacCtl__P_8h" name="ONUMacCtl_P.h" local="yes" imported="no">ONUMacCtl_P.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>ONUMacCtl__P_8cc.html</anchorfile>
+      <anchor>a8d78e5a2605d091d97ccde1331b27914</anchor>
+      <arglist>(ONUMacCtl_P)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ONUMacCtl_P.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/ONU/</path>
+    <filename>ONUMacCtl__P_8h</filename>
+    <includes id="ONUMacCtlBase_8h" name="ONUMacCtlBase.h" local="yes" imported="no">ONUMacCtlBase.h</includes>
+    <includes id="ONUQPerLLiDBase_8h" name="ONUQPerLLiDBase.h" local="yes" imported="no">ONUQPerLLiDBase.h</includes>
+    <class kind="class">ONUMacCtl_P</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>SEND_REPORT</name>
+      <anchorfile>ONUMacCtl__P_8h.html</anchorfile>
+      <anchor>ae95ad8a1d8b4d3030cf22cebac200430</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ONUMacCtlBase.cc</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/ONU/</path>
+    <filename>ONUMacCtlBase_8cc</filename>
+    <includes id="ONUMacCtlBase_8h" name="ONUMacCtlBase.h" local="yes" imported="no">ONUMacCtlBase.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>ONUMacCtlBase.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/ONU/</path>
+    <filename>ONUMacCtlBase_8h</filename>
+    <includes id="MPCP__codes_8h" name="MPCP_codes.h" local="yes" imported="no">MPCP_codes.h</includes>
+    <includes id="EPON__messages__m_8h" name="EPON_messages_m.h" local="yes" imported="no">EPON_messages_m.h</includes>
+    <includes id="MPCPTools_8h" name="MPCPTools.h" local="yes" imported="no">MPCPTools.h</includes>
+    <includes id="EPON__mac_8h" name="EPON_mac.h" local="yes" imported="no">EPON_mac.h</includes>
+    <class kind="class">ONUMacCtlBase</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>GETFRAMEMSG</name>
+      <anchorfile>ONUMacCtlBase_8h.html</anchorfile>
+      <anchor>adf7d5e6b3ac0fb09b0e4864af48ae4ed</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>WAKEUPMSG</name>
+      <anchorfile>ONUMacCtlBase_8h.html</anchorfile>
+      <anchor>a3593b1b91fec6813d3d03abfee96f8e7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>STARTTXMSG</name>
+      <anchorfile>ONUMacCtlBase_8h.html</anchorfile>
+      <anchor>ad087494cf3a9aeb3d94407d78e71461e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>TX_ON</name>
+      <anchorfile>ONUMacCtlBase_8h.html</anchorfile>
+      <anchor>a4736ad0b388fe0fd16bf2620ec35e03d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>TX_OFF</name>
+      <anchorfile>ONUMacCtlBase_8h.html</anchorfile>
+      <anchor>a36e3e2ef609ae8575b61fe2c6a9ae35b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>TX_INIT</name>
+      <anchorfile>ONUMacCtlBase_8h.html</anchorfile>
+      <anchor>a4be77082fa28c951f57e696c5616f3e9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>TX_IDLE</name>
+      <anchorfile>ONUMacCtlBase_8h.html</anchorfile>
+      <anchor>a8466586b863fc4b1722eda703698d847</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>TX_SLEEP</name>
+      <anchorfile>ONUMacCtlBase_8h.html</anchorfile>
+      <anchor>aa22f344687606a775a3466beffd86e77</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ONUQPerLLiDBase.cc</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/ONU/</path>
+    <filename>ONUQPerLLiDBase_8cc</filename>
+    <includes id="ONUQPerLLiDBase_8h" name="ONUQPerLLiDBase.h" local="yes" imported="no">ONUQPerLLiDBase.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>ONUQPerLLiDBase.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/ONU/</path>
+    <filename>ONUQPerLLiDBase_8h</filename>
+    <includes id="MPCP__codes_8h" name="MPCP_codes.h" local="yes" imported="no">MPCP_codes.h</includes>
+    <includes id="EPON__messages__m_8h" name="EPON_messages_m.h" local="yes" imported="no">EPON_messages_m.h</includes>
+    <includes id="MPCPTools_8h" name="MPCPTools.h" local="yes" imported="no">MPCPTools.h</includes>
+    <includes id="EPON__mac_8h" name="EPON_mac.h" local="yes" imported="no">EPON_mac.h</includes>
+    <includes id="ServiceConfig_8h" name="ServiceConfig.h" local="yes" imported="no">ServiceConfig.h</includes>
+    <includes id="CopyableQueueCVectors_8h" name="CopyableQueueCVectors.h" local="yes" imported="no">CopyableQueueCVectors.h</includes>
+    <includes id="ONUMacCtl__NP_8h" name="ONUMacCtl_NP.h" local="yes" imported="no">ONUMacCtl_NP.h</includes>
+    <class kind="class">QueuePerLLid</class>
+    <class kind="class">ONUQPerLLiDBase</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>REGTOMSG</name>
+      <anchorfile>ONUQPerLLiDBase_8h.html</anchorfile>
+      <anchor>adb7345cfb7328fc816da9301acc1e6ff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>REGSENDMSG</name>
+      <anchorfile>ONUQPerLLiDBase_8h.html</anchorfile>
+      <anchor>a04bfc9970f6f324290c19aeefcb640e5</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ONUTable.cc</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/OLT/</path>
+    <filename>ONUTable_8cc</filename>
+    <includes id="ONUTable_8h" name="ONUTable.h" local="yes" imported="no">ONUTable.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>ONUTable_8cc.html</anchorfile>
+      <anchor>a22350faeca3d05bff73fd1f92360b396</anchor>
+      <arglist>(ONUTable)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ONUTable.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/OLT/</path>
+    <filename>ONUTable_8h</filename>
+    <includes id="ONUTableEntry_8h" name="ONUTableEntry.h" local="yes" imported="no">ONUTableEntry.h</includes>
+    <class kind="class">ONUTable</class>
+  </compound>
+  <compound kind="file">
+    <name>ONUTableEntry.cc</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/OLT/</path>
+    <filename>ONUTableEntry_8cc</filename>
+    <includes id="ONUTableEntry_8h" name="ONUTableEntry.h" local="yes" imported="no">ONUTableEntry.h</includes>
+    <member kind="function">
+      <type>std::ostream &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>ONUTableEntry_8cc.html</anchorfile>
+      <anchor>abbabdda9c2f391a8ce88268b571af2ab</anchor>
+      <arglist>(std::ostream &amp;out, const ONUTableEntry &amp;en)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ONUTableEntry.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/OLT/</path>
+    <filename>ONUTableEntry_8h</filename>
+    <class kind="struct">commitedTime</class>
+    <class kind="class">ONUTableEntry</class>
+    <member kind="typedef">
+      <type>struct commitedTime</type>
+      <name>CommitedTime</name>
+      <anchorfile>ONUTableEntry_8h.html</anchorfile>
+      <anchor>a5cb071000bec3822856cec0e901a3adc</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>PON_Splitter.cc</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/</path>
+    <filename>PON__Splitter_8cc</filename>
+    <includes id="PON__Splitter_8h" name="PON_Splitter.h" local="yes" imported="no">PON_Splitter.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>PON__Splitter_8cc.html</anchorfile>
+      <anchor>a8f3142860a2d3c2b373fe3b3c10ba68e</anchor>
+      <arglist>(PON_Splitter)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>PON_Splitter.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/</path>
+    <filename>PON__Splitter_8h</filename>
+    <includes id="MPCPTools_8h" name="MPCPTools.h" local="yes" imported="no">MPCPTools.h</includes>
+    <class kind="class">PON_Splitter</class>
+  </compound>
+  <compound kind="file">
+    <name>ServiceConfig.cc</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/common/</path>
+    <filename>ServiceConfig_8cc</filename>
+    <includes id="ServiceConfig_8h" name="ServiceConfig.h" local="yes" imported="no">ServiceConfig.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>ServiceConfig_8cc.html</anchorfile>
+      <anchor>a326eb86f363e04c6d3422ed314bef35a</anchor>
+      <arglist>(ServiceConfig)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::ostream &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>ServiceConfig_8cc.html</anchorfile>
+      <anchor>a6d65bc9c352b1d571b2c2f279201220a</anchor>
+      <arglist>(std::ostream &amp;out, const struct _srv_item &amp;sit)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ServiceConfig.h</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/common/</path>
+    <filename>ServiceConfig_8h</filename>
+    <class kind="struct">_srv_item</class>
+    <class kind="class">ServiceConfig</class>
+    <member kind="typedef">
+      <type>struct _srv_item</type>
+      <name>SrvItem</name>
+      <anchorfile>ServiceConfig_8h.html</anchorfile>
+      <anchor>a8c8df21a5eecafcc0fee7ffe837838f9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::vector&lt; SrvItem &gt;</type>
+      <name>SrvList</name>
+      <anchorfile>ServiceConfig_8h.html</anchorfile>
+      <anchor>aaf9dfd93fb9195bd4743e76b1a1ed879</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>_srv_item</name>
+    <filename>struct__srv__item.html</filename>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator&lt;</name>
+      <anchorfile>struct__srv__item.html</anchorfile>
+      <anchor>ac5e3c3c9854340d24f1a0bc928b22ee2</anchor>
+      <arglist>(const struct _srv_item &amp;b) const </arglist>
+    </member>
+    <member kind="variable">
+      <type>std::string</type>
+      <name>name</name>
+      <anchorfile>struct__srv__item.html</anchorfile>
+      <anchor>afec61e3cfd8168ddbe18e9496f11e3f8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>double</type>
+      <name>priority</name>
+      <anchorfile>struct__srv__item.html</anchorfile>
+      <anchor>a9072a2c3c8963d40c468029195aa982a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint16_t</type>
+      <name>vlan</name>
+      <anchorfile>struct__srv__item.html</anchorfile>
+      <anchor>a8161dc2da4951885ef7e511690554806</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>double</type>
+      <name>msr</name>
+      <anchorfile>struct__srv__item.html</anchorfile>
+      <anchor>a375cf8a82c991ad33de024db2c3d6ea1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>double</type>
+      <name>mrr</name>
+      <anchorfile>struct__srv__item.html</anchorfile>
+      <anchor>aacc4efbe882e0989d6f0df38f2293d10</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="friend">
+      <type>friend std::ostream &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>struct__srv__item.html</anchorfile>
+      <anchor>a6d65bc9c352b1d571b2c2f279201220a</anchor>
+      <arglist>(std::ostream &amp;out, const struct _srv_item &amp;sit)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>commitedTime</name>
+    <filename>structcommitedTime.html</filename>
+    <member kind="variable">
+      <type>uint32_t</type>
+      <name>start</name>
+      <anchorfile>structcommitedTime.html</anchorfile>
+      <anchor>a4b792604028c750646faff97a6f9c149</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint32_t</type>
+      <name>length</name>
+      <anchorfile>structcommitedTime.html</anchorfile>
+      <anchor>aa6be7083c26c4a5908f2f3b4e8fc23a0</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CopyableQueueCVectors</name>
+    <filename>classCopyableQueueCVectors.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>CopyableQueueCVectors</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>aa63001f43cf4e0c2f598643fa0c0bd94</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~CopyableQueueCVectors</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>ad2992e65bd0a45980647fe4acf625eaf</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>recordVectors</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>af1a1f27e99becf135980d7d05a6d0923</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setVectorNames</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>a9f9c0eaf94c1a8186b4f8a7f73e2a23b</anchor>
+      <arglist>(std::string name)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>deleteVectors</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>a9f332c667608b1c1552358ab00f049b3</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getGranularity</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>a6e2f825d0f9a0136c4ed93c0172d11d2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setGranularity</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>a6cb95d6b8f5a6d4bc6f6e0d530d6f7a1</anchor>
+      <arglist>(double gran)</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned long</type>
+      <name>getIncomingBPS</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>a9200be8ea1c3d236e1e77b074a41c6fc</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned long</type>
+      <name>getLastSecIncomingBPS</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>a1bb7b4a42f47d38e885073f588500ab6</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable">
+      <type>unsigned long</type>
+      <name>numBytesSent</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>a4be048abc2ea7570c16e15265cc80f90</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>unsigned long</type>
+      <name>numBytesDropped</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>a3a79ad514f7de0d662d677da0b7f7576</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>unsigned long</type>
+      <name>numFramesSent</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>a8274e0ff0885def66517a16cf064758e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint64_t</type>
+      <name>numIncomingBitsOld</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>afaa5c7f0132defe0c37b0872475b2fd5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint64_t</type>
+      <name>numIncomingBits</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>a73e12a6f97da564f3be71fcc7d273407</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint64_t</type>
+      <name>incomingBPS</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>a201d9d36c3c7863d94cc99790fcc289a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>cOutVector *</type>
+      <name>numBytesSentVector</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>a2c0b0847a2b78553cd1a7e301245f931</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>cOutVector *</type>
+      <name>numBytesDroppedVector</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>a66296eb5f5cb630a5438a3f4c12bc192</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>cOutVector *</type>
+      <name>numFramesSentVector</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>a627bb0580322cb4e776ee4e244408d21</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>unsigned long</type>
+      <name>numBytesSentPrev</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>a974031471a5f281132ae2fc9abda6cbc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>simtime_t</type>
+      <name>lastUpdateTime</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>a019d7c68d246e8710e3cbd5c0a53e32f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>double</type>
+      <name>granularity</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>a22724ebf3353de4d7ff5515cfa6a5b76</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>unsigned long</type>
+      <name>numBytesSent_old</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>ac1195d60dedf7996d5627f408bc52f53</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>unsigned long</type>
+      <name>numBytesDropped_old</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>a68bbe81e459d977f8ad9c0981e0395c3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>unsigned long</type>
+      <name>numFramesSent_old</name>
+      <anchorfile>classCopyableQueueCVectors.html</anchorfile>
+      <anchor>a679f3460b6233b063f09203d0b602781</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>EPON_LLidCtrlInfo</name>
+    <filename>classEPON__LLidCtrlInfo.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>EPON_LLidCtrlInfo</name>
+      <anchorfile>classEPON__LLidCtrlInfo.html</anchorfile>
+      <anchor>a1c1622cba6d35a4a01677a07ef6a318f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>EPON_LLidCtrlInfo</name>
+      <anchorfile>classEPON__LLidCtrlInfo.html</anchorfile>
+      <anchor>ae8d5d3d2d8d1467df89412092d21c947</anchor>
+      <arglist>(int lid)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~EPON_LLidCtrlInfo</name>
+      <anchorfile>classEPON__LLidCtrlInfo.html</anchorfile>
+      <anchor>a3bddceab65a3c9abe35da6238ef8a241</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual cObject *</type>
+      <name>dup</name>
+      <anchorfile>classEPON__LLidCtrlInfo.html</anchorfile>
+      <anchor>a61bf4e706cb5c5b8ecea3a5db8c30ec4</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual std::string</type>
+      <name>info</name>
+      <anchorfile>classEPON__LLidCtrlInfo.html</anchorfile>
+      <anchor>a41c615260ca24073ae6aa0d4e7fef315</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>llid</name>
+      <anchorfile>classEPON__LLidCtrlInfo.html</anchorfile>
+      <anchor>a22816820608cef4293a7c296d3de8734</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>EPON_mac</name>
+    <filename>classEPON__mac.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>EPON_mac</name>
+      <anchorfile>classEPON__mac.html</anchorfile>
+      <anchor>a18ecaafc12641edd91e8f9da68cd6f31</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~EPON_mac</name>
+      <anchorfile>classEPON__mac.html</anchorfile>
+      <anchor>a4966fa2fac2b970f19a54df51b4d7355</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classEPON__mac.html</anchorfile>
+      <anchor>a9c63bb76ade78c6cc46e3c93e7ec9f5d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>finalize</name>
+      <anchorfile>classEPON__mac.html</anchorfile>
+      <anchor>a0d0bc4dcc1911d1e3378b8e8801f1461</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initializeTxrate</name>
+      <anchorfile>classEPON__mac.html</anchorfile>
+      <anchor>a54d08d318c027a703d6d35d5ce6f77ea</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleMessage</name>
+      <anchorfile>classEPON__mac.html</anchorfile>
+      <anchor>a02ba48601e5e09ade42e3f9e78500f2f</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>startFrameTransmission</name>
+      <anchorfile>classEPON__mac.html</anchorfile>
+      <anchor>a0d08e9e7bca1dc0c4e594ac1c40a2fab</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>processFrameFromUpperLayer</name>
+      <anchorfile>classEPON__mac.html</anchorfile>
+      <anchor>a917732c653ee80c33530e16a8721a309</anchor>
+      <arglist>(EtherFrame *frame)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>processMsgFromNetwork</name>
+      <anchorfile>classEPON__mac.html</anchorfile>
+      <anchor>ad9900db1020036f55846e7f5584503d3</anchor>
+      <arglist>(cPacket *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleEndIFGPeriod</name>
+      <anchorfile>classEPON__mac.html</anchorfile>
+      <anchor>abe5bd67d0e3ea5af32e3e48cd9d3ffeb</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleEndTxPeriod</name>
+      <anchorfile>classEPON__mac.html</anchorfile>
+      <anchor>a5621adc5804efa6367710b3eb02c4b85</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>updateHasSubcribers</name>
+      <anchorfile>classEPON__mac.html</anchorfile>
+      <anchor>a1b03a533a8111a26e05307eb9ed07a83</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>scheduleEndTxPeriod</name>
+      <anchorfile>classEPON__mac.html</anchorfile>
+      <anchor>a46641d36cc5980d8ebe31b6dd184af3d</anchor>
+      <arglist>(cPacket *frame)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cOutVector</type>
+      <name>TxRateVector</name>
+      <anchorfile>classEPON__mac.html</anchorfile>
+      <anchor>aed2032fd6fb88c3ae07626246a56f07b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>EPON_OLT_relayDefault</name>
+    <filename>classEPON__OLT__relayDefault.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~EPON_OLT_relayDefault</name>
+      <anchorfile>classEPON__OLT__relayDefault.html</anchorfile>
+      <anchor>af1ffe7819a70b7c4355a4be20d1ac067</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classEPON__OLT__relayDefault.html</anchorfile>
+      <anchor>ae7bbed6882bcf514262cdd4fad9d60b6</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleMessage</name>
+      <anchorfile>classEPON__OLT__relayDefault.html</anchorfile>
+      <anchor>a62157e29e5c63145190dae0d8f5fadc0</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleFromPON</name>
+      <anchorfile>classEPON__OLT__relayDefault.html</anchorfile>
+      <anchor>a6aee42007aaf4bf27333e0e24942cb14</anchor>
+      <arglist>(EtherFrame *frame)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleFromLAN</name>
+      <anchorfile>classEPON__OLT__relayDefault.html</anchorfile>
+      <anchor>ac7532aea2950fe70af7a8343eb83288e</anchor>
+      <arglist>(EtherFrame *frame)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual cModule *</type>
+      <name>findModuleUp</name>
+      <anchorfile>classEPON__OLT__relayDefault.html</anchorfile>
+      <anchor>aa4c9b9a629e89682359445eccdae26e6</anchor>
+      <arglist>(const char *name)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>long</type>
+      <name>numProcessedFrames</name>
+      <anchorfile>classEPON__OLT__relayDefault.html</anchorfile>
+      <anchor>aa6207f0416d8f47f3ad5965ecab432e2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>long</type>
+      <name>numDroppedFrames</name>
+      <anchorfile>classEPON__OLT__relayDefault.html</anchorfile>
+      <anchor>ab918e81c6fd89e109e5386b7a82f11b4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>SrvList *</type>
+      <name>serviceList</name>
+      <anchorfile>classEPON__OLT__relayDefault.html</anchorfile>
+      <anchor>a712f4dcb1dcadfeed24239bdfd03c8fb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>ONUTable *</type>
+      <name>onutbl</name>
+      <anchorfile>classEPON__OLT__relayDefault.html</anchorfile>
+      <anchor>af5f0159621a3794646f1c6185cca204d</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>EPON_OLT_vlanBridgeRelay</name>
+    <filename>classEPON__OLT__vlanBridgeRelay.html</filename>
+    <base>EPON_OLT_relayDefault</base>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classEPON__OLT__vlanBridgeRelay.html</anchorfile>
+      <anchor>a8dea3b0b4de998cd4584f6a06b476c87</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleFromLAN</name>
+      <anchorfile>classEPON__OLT__vlanBridgeRelay.html</anchorfile>
+      <anchor>a2582867c0658eaa1174153fc3dfda8c3</anchor>
+      <arglist>(EtherFrame *frame)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual int</type>
+      <name>findVlanServiceIndex</name>
+      <anchorfile>classEPON__OLT__vlanBridgeRelay.html</anchorfile>
+      <anchor>afc13375037b5466165f17a0f585031b7</anchor>
+      <arglist>(uint16_t vlan)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual std::vector&lt; uint16_t &gt;</type>
+      <name>findLLiDsForServiceIndex</name>
+      <anchorfile>classEPON__OLT__vlanBridgeRelay.html</anchorfile>
+      <anchor>afbad33d353911fd94fee6f2609d38f06</anchor>
+      <arglist>(int index)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>EPON_ONU_relayDefault</name>
+    <filename>classEPON__ONU__relayDefault.html</filename>
+    <member kind="typedef" protection="protected">
+      <type>std::vector&lt; uint16_t &gt;</type>
+      <name>llidTable</name>
+      <anchorfile>classEPON__ONU__relayDefault.html</anchorfile>
+      <anchor>af9ceb3c9fbc599328c62400c1dc7bfd6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classEPON__ONU__relayDefault.html</anchorfile>
+      <anchor>affb634593050de9471e241a94fd628f4</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleMessage</name>
+      <anchorfile>classEPON__ONU__relayDefault.html</anchorfile>
+      <anchor>a8bb6e2cdaf8206736491df4afd5e00bb</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleFromPON</name>
+      <anchorfile>classEPON__ONU__relayDefault.html</anchorfile>
+      <anchor>a8e57cd6ea75d82f645072ddd390c01d4</anchor>
+      <arglist>(EtherFrame *frame)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleFromLAN</name>
+      <anchorfile>classEPON__ONU__relayDefault.html</anchorfile>
+      <anchor>a53348f4b44927d3bb7f2aa499b6d19b8</anchor>
+      <arglist>(EtherFrame *frame)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual cModule *</type>
+      <name>findModuleUp</name>
+      <anchorfile>classEPON__ONU__relayDefault.html</anchorfile>
+      <anchor>a5802048a5ec69478f6feda68f232c6a6</anchor>
+      <arglist>(const char *name)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>long</type>
+      <name>numProcessedFrames</name>
+      <anchorfile>classEPON__ONU__relayDefault.html</anchorfile>
+      <anchor>ad2d189c63f46df8a117cd90b1a81f635</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>long</type>
+      <name>numDroppedFrames</name>
+      <anchorfile>classEPON__ONU__relayDefault.html</anchorfile>
+      <anchor>a147036c2fc86fa9807463f42f3bd2580</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>llidTable</type>
+      <name>llids</name>
+      <anchorfile>classEPON__ONU__relayDefault.html</anchorfile>
+      <anchor>aae0d3ca26beadfff639349744be21396</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>SrvList *</type>
+      <name>serviceList</name>
+      <anchorfile>classEPON__ONU__relayDefault.html</anchorfile>
+      <anchor>a6386d7b08092897232fc77ce03af677b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>EPON_ONU_vlanBridgeRelay</name>
+    <filename>classEPON__ONU__vlanBridgeRelay.html</filename>
+    <base>EPON_ONU_relayDefault</base>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classEPON__ONU__vlanBridgeRelay.html</anchorfile>
+      <anchor>ab91253a6930e23ae753f6d052151b628</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleFromLAN</name>
+      <anchorfile>classEPON__ONU__vlanBridgeRelay.html</anchorfile>
+      <anchor>a9c934510abb2ac888f2da7ae8bbaf000</anchor>
+      <arglist>(EtherFrame *frame)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual uint16_t</type>
+      <name>findLLiDForVlan</name>
+      <anchorfile>classEPON__ONU__vlanBridgeRelay.html</anchorfile>
+      <anchor>a8f1690a26ce2da5b99e9c5051fcfaf09</anchor>
+      <arglist>(uint16_t vlan)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>EtherFrameWithLLID</name>
+    <filename>classEtherFrameWithLLID.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>EtherFrameWithLLID</name>
+      <anchorfile>classEtherFrameWithLLID.html</anchorfile>
+      <anchor>a855da25ddbeda2002dfd86e7413fece9</anchor>
+      <arglist>(const char *name=NULL, int kind=0)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>EtherFrameWithLLID</name>
+      <anchorfile>classEtherFrameWithLLID.html</anchorfile>
+      <anchor>abcca517d6de1c01d66ef47b0542ffb8d</anchor>
+      <arglist>(const EtherFrameWithLLID &amp;other)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~EtherFrameWithLLID</name>
+      <anchorfile>classEtherFrameWithLLID.html</anchorfile>
+      <anchor>a5fe950c9cebbfafdb57b3123a97e52ff</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>EtherFrameWithLLID &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classEtherFrameWithLLID.html</anchorfile>
+      <anchor>ab1ac3feddb8cde698ead1b2dd3d25b6d</anchor>
+      <arglist>(const EtherFrameWithLLID &amp;other)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual EtherFrameWithLLID *</type>
+      <name>dup</name>
+      <anchorfile>classEtherFrameWithLLID.html</anchorfile>
+      <anchor>acbda77c06c3f06412f91326c91e51fab</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>parsimPack</name>
+      <anchorfile>classEtherFrameWithLLID.html</anchorfile>
+      <anchor>aba0965904467005cbef03f6fb1e5413e</anchor>
+      <arglist>(cCommBuffer *b)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>parsimUnpack</name>
+      <anchorfile>classEtherFrameWithLLID.html</anchorfile>
+      <anchor>a5e202ecff3988d4f5d3b7e8281c4fac1</anchor>
+      <arglist>(cCommBuffer *b)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint16_t</type>
+      <name>getLlid</name>
+      <anchorfile>classEtherFrameWithLLID.html</anchorfile>
+      <anchor>aaadd9ee32a45636ee1bef66a5aff79e9</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setLlid</name>
+      <anchorfile>classEtherFrameWithLLID.html</anchorfile>
+      <anchor>a5d8b3961d58a4c0cea7715403e4d0666</anchor>
+      <arglist>(uint16_t llid_var)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>operator==</name>
+      <anchorfile>classEtherFrameWithLLID.html</anchorfile>
+      <anchor>a0331e65555496700db578fcaa07ce7da</anchor>
+      <arglist>(const EtherFrameWithLLID &amp;)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint16_t</type>
+      <name>llid_var</name>
+      <anchorfile>classEtherFrameWithLLID.html</anchorfile>
+      <anchor>a96043f7be4eb802544174bcca5376fca</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>MPCP</name>
+    <filename>classMPCP.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>MPCP</name>
+      <anchorfile>classMPCP.html</anchorfile>
+      <anchor>ac971eadacd54268abd0d7e8ea6ebea1d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>MPCP</name>
+      <anchorfile>classMPCP.html</anchorfile>
+      <anchor>a3e3bcb3cb9f1f8da44865a993726115e</anchor>
+      <arglist>(const MPCP &amp;other)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~MPCP</name>
+      <anchorfile>classMPCP.html</anchorfile>
+      <anchor>a49793d9209d7396e761cca94bb41938d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>MPCP &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classMPCP.html</anchorfile>
+      <anchor>a369e26559d47f9ef9519eca2413834c2</anchor>
+      <arglist>(const MPCP &amp;other)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual MPCP *</type>
+      <name>dup</name>
+      <anchorfile>classMPCP.html</anchorfile>
+      <anchor>a879758b5923cf83aa1788d5f04a4fe71</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>parsimPack</name>
+      <anchorfile>classMPCP.html</anchorfile>
+      <anchor>a846cd98e2c150f94d530afb46cf9beb6</anchor>
+      <arglist>(cCommBuffer *b)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>parsimUnpack</name>
+      <anchorfile>classMPCP.html</anchorfile>
+      <anchor>aac918d0d069e71d118564fccdf647ef5</anchor>
+      <arglist>(cCommBuffer *b)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint16_t</type>
+      <name>getOpcode</name>
+      <anchorfile>classMPCP.html</anchorfile>
+      <anchor>a68374d0a62fbdd1c40f264f1a9a9230b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setOpcode</name>
+      <anchorfile>classMPCP.html</anchorfile>
+      <anchor>ac16411714bb8f9b3f4bc9e4fc88ae17f</anchor>
+      <arglist>(uint16_t opcode_var)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint32_t</type>
+      <name>getTs</name>
+      <anchorfile>classMPCP.html</anchorfile>
+      <anchor>a5aa6e91cc65fa7fb543ca33023fd8a9c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setTs</name>
+      <anchorfile>classMPCP.html</anchorfile>
+      <anchor>ae7828b734088f73c3b55adf0dfc1197e</anchor>
+      <arglist>(uint32_t ts_var)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>operator==</name>
+      <anchorfile>classMPCP.html</anchorfile>
+      <anchor>a0cb5f2bf121901d310da54cae78bc89b</anchor>
+      <arglist>(const MPCP &amp;)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint16_t</type>
+      <name>opcode_var</name>
+      <anchorfile>classMPCP.html</anchorfile>
+      <anchor>a2ae4d9f209523038aea0b1c54960c0eb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint32_t</type>
+      <name>ts_var</name>
+      <anchorfile>classMPCP.html</anchorfile>
+      <anchor>a2264d8e84f969dd81d75ea59dd5144e2</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>MPCPGate</name>
+    <filename>classMPCPGate.html</filename>
+    <base>MPCP</base>
+    <member kind="function">
+      <type></type>
+      <name>MPCPGate</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>ae27f09890f2957e9a5cc66662e4d78fe</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>MPCPGate</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>ad07054045a79d32dd4b6af8f6920a028</anchor>
+      <arglist>(const MPCPGate &amp;other)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~MPCPGate</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>a89b1c8f107c96f895aede059d738eb07</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>MPCPGate &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>a26cbaf6cea19d2ede329641cc11e730d</anchor>
+      <arglist>(const MPCPGate &amp;other)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual MPCPGate *</type>
+      <name>dup</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>a067abee417da00e74029f66335c0817c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>parsimPack</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>a22038a625201e3261311f5e79b8de824</anchor>
+      <arglist>(cCommBuffer *b)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>parsimUnpack</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>a1f6d339a7158e1cd62e0e929d881d954</anchor>
+      <arglist>(cCommBuffer *b)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint8_t</type>
+      <name>getListLen</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>aa568e79e9c26b388d9e291ccd76db8c5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setListLen</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>a7c318b74acb67a4d2ef479fcdf6e4cb4</anchor>
+      <arglist>(uint8_t listLen_var)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setStartTimeArraySize</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>abdc88bf365d7d35143e12615123a10a0</anchor>
+      <arglist>(unsigned int size)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual unsigned int</type>
+      <name>getStartTimeArraySize</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>a8cae04a3ef754dcfb4601655991e5ba1</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint32_t</type>
+      <name>getStartTime</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>a188d0342a2fb1c02190fc079aa2b20d9</anchor>
+      <arglist>(unsigned int k) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setStartTime</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>a840d508505c37f320a26fa9c60212ee4</anchor>
+      <arglist>(unsigned int k, uint32_t startTime_var)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setDurationArraySize</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>a5e8590ea8881767a93ae49e393039f52</anchor>
+      <arglist>(unsigned int size)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual unsigned int</type>
+      <name>getDurationArraySize</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>a781c613d94ef8f5542fed0b2abcda044</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint32_t</type>
+      <name>getDuration</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>a3b82c4a4e1246e2170e49451690d9efe</anchor>
+      <arglist>(unsigned int k) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setDuration</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>a8bccbe88a8094888b8f37f99cb78af11</anchor>
+      <arglist>(unsigned int k, uint32_t duration_var)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint16_t</type>
+      <name>getSlotsNum</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>ab25cbd133a2cf312e62abe9d80aa5d8d</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setSlotsNum</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>af0e5361a85dab838136070bcee24e8c5</anchor>
+      <arglist>(uint16_t slotsNum_var)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint16_t</type>
+      <name>getSlotTime</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>a568ad27f81f61ff5bb0eb5d1b6aad9b9</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setSlotTime</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>a5ecaa1ee9b5653aa54d2411a0e1fde35</anchor>
+      <arglist>(uint16_t slotTime_var)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>operator==</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>a51bd33101b52e9d91e9017c6013b5165</anchor>
+      <arglist>(const MPCPGate &amp;)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint8_t</type>
+      <name>listLen_var</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>ac9187b36ab07b85bca0c3170b5aa744a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint32_t *</type>
+      <name>startTime_var</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>a3d7f2537ee801b6e947343fde258dc24</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>unsigned int</type>
+      <name>startTime_arraysize</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>ab3cfd328e1508156ad0f81c25c1d6aca</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint32_t *</type>
+      <name>duration_var</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>a95ef03000fcbc8b4bee0aedd6e50cf08</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>unsigned int</type>
+      <name>duration_arraysize</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>a06384cd2a4dd70183620d353c2fd70ce</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint16_t</type>
+      <name>slotsNum_var</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>abe2d9fcdc0f596dc0b21b5cc26cb8549</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint16_t</type>
+      <name>slotTime_var</name>
+      <anchorfile>classMPCPGate.html</anchorfile>
+      <anchor>aa098b9ede21d14918664cddb682e977e</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>MPCPRegAck</name>
+    <filename>classMPCPRegAck.html</filename>
+    <base>MPCP</base>
+    <member kind="function">
+      <type></type>
+      <name>MPCPRegAck</name>
+      <anchorfile>classMPCPRegAck.html</anchorfile>
+      <anchor>a4c6ff692fd5f0599c4485ac68453b4ff</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>MPCPRegAck</name>
+      <anchorfile>classMPCPRegAck.html</anchorfile>
+      <anchor>afe7d47c30cdf6457c9bbadc13e84f133</anchor>
+      <arglist>(const MPCPRegAck &amp;other)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~MPCPRegAck</name>
+      <anchorfile>classMPCPRegAck.html</anchorfile>
+      <anchor>a207cc7d792ebb498b0c92526e544f9ed</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>MPCPRegAck &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classMPCPRegAck.html</anchorfile>
+      <anchor>a9384e17dc86e7cb3acf57bede44cd433</anchor>
+      <arglist>(const MPCPRegAck &amp;other)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual MPCPRegAck *</type>
+      <name>dup</name>
+      <anchorfile>classMPCPRegAck.html</anchorfile>
+      <anchor>a0de9ebde1244d5d0abc17278aec777e8</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>parsimPack</name>
+      <anchorfile>classMPCPRegAck.html</anchorfile>
+      <anchor>a188b668f2ec838f0c86ff4341103a699</anchor>
+      <arglist>(cCommBuffer *b)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>parsimUnpack</name>
+      <anchorfile>classMPCPRegAck.html</anchorfile>
+      <anchor>ab0fc268b7040c7f5e40275fe00144f2b</anchor>
+      <arglist>(cCommBuffer *b)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>operator==</name>
+      <anchorfile>classMPCPRegAck.html</anchorfile>
+      <anchor>a49108f7ab491621bfd8e36d068ac5e2e</anchor>
+      <arglist>(const MPCPRegAck &amp;)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>MPCPRegister</name>
+    <filename>classMPCPRegister.html</filename>
+    <base>MPCP</base>
+    <member kind="function">
+      <type></type>
+      <name>MPCPRegister</name>
+      <anchorfile>classMPCPRegister.html</anchorfile>
+      <anchor>acef32720d4c472a0e9f62c24d056ad20</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>MPCPRegister</name>
+      <anchorfile>classMPCPRegister.html</anchorfile>
+      <anchor>a117a228ec6d4276c495d726d0bc04415</anchor>
+      <arglist>(const MPCPRegister &amp;other)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~MPCPRegister</name>
+      <anchorfile>classMPCPRegister.html</anchorfile>
+      <anchor>aa03f5079a59ba34ee6e266a5eae2371c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>MPCPRegister &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classMPCPRegister.html</anchorfile>
+      <anchor>abb8ba447fa4e2eb55b8ec03e8df9ae74</anchor>
+      <arglist>(const MPCPRegister &amp;other)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual MPCPRegister *</type>
+      <name>dup</name>
+      <anchorfile>classMPCPRegister.html</anchorfile>
+      <anchor>a19d95f7c25589ac381a1485c0c53180e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>parsimPack</name>
+      <anchorfile>classMPCPRegister.html</anchorfile>
+      <anchor>ab1b14aa152aa26fc3e10ef75f6335a56</anchor>
+      <arglist>(cCommBuffer *b)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>parsimUnpack</name>
+      <anchorfile>classMPCPRegister.html</anchorfile>
+      <anchor>ace250790991cd709725acb91b02b557f</anchor>
+      <arglist>(cCommBuffer *b)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint8_t</type>
+      <name>getPtpNumReg</name>
+      <anchorfile>classMPCPRegister.html</anchorfile>
+      <anchor>a65abe8520add5c97a8fb0d5b59af3006</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setPtpNumReg</name>
+      <anchorfile>classMPCPRegister.html</anchorfile>
+      <anchor>af6886cf74f6bf67e20ae7876dc223552</anchor>
+      <arglist>(uint8_t ptpNumReg_var)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setLLIDsArraySize</name>
+      <anchorfile>classMPCPRegister.html</anchorfile>
+      <anchor>a59b7caa00e27053c568f3b0b0eca52a1</anchor>
+      <arglist>(unsigned int size)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual unsigned int</type>
+      <name>getLLIDsArraySize</name>
+      <anchorfile>classMPCPRegister.html</anchorfile>
+      <anchor>a0ea03ed1bbd76d6ad76fae492b5712ee</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint16_t</type>
+      <name>getLLIDs</name>
+      <anchorfile>classMPCPRegister.html</anchorfile>
+      <anchor>af0121bd6e8823754e944615d64c25298</anchor>
+      <arglist>(unsigned int k) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setLLIDs</name>
+      <anchorfile>classMPCPRegister.html</anchorfile>
+      <anchor>a6de6f18795ba95529b01e6076adf6aa4</anchor>
+      <arglist>(unsigned int k, uint16_t LLIDs_var)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>operator==</name>
+      <anchorfile>classMPCPRegister.html</anchorfile>
+      <anchor>a564b6ea1e3619ba50f77e9363277dcea</anchor>
+      <arglist>(const MPCPRegister &amp;)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint8_t</type>
+      <name>ptpNumReg_var</name>
+      <anchorfile>classMPCPRegister.html</anchorfile>
+      <anchor>a2035e127269f72e8fef6af74d1470a88</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint16_t *</type>
+      <name>LLIDs_var</name>
+      <anchorfile>classMPCPRegister.html</anchorfile>
+      <anchor>a8689cdad174997e47914b4c7925b33ca</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>unsigned int</type>
+      <name>LLIDs_arraysize</name>
+      <anchorfile>classMPCPRegister.html</anchorfile>
+      <anchor>a2a5501e8cb164b2826361547dee82d54</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>MPCPRegReq</name>
+    <filename>classMPCPRegReq.html</filename>
+    <base>MPCP</base>
+    <member kind="function">
+      <type></type>
+      <name>MPCPRegReq</name>
+      <anchorfile>classMPCPRegReq.html</anchorfile>
+      <anchor>a2c9bd0b57da3df682e8ffc2e86b4d6f7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>MPCPRegReq</name>
+      <anchorfile>classMPCPRegReq.html</anchorfile>
+      <anchor>a7e00486ae2a90bed14bc76e89308e3ae</anchor>
+      <arglist>(const MPCPRegReq &amp;other)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~MPCPRegReq</name>
+      <anchorfile>classMPCPRegReq.html</anchorfile>
+      <anchor>aff5259fbc04c218ce92f5b32ad0ad262</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>MPCPRegReq &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classMPCPRegReq.html</anchorfile>
+      <anchor>a7348511fc00fab309bae9f7c5cc6f03f</anchor>
+      <arglist>(const MPCPRegReq &amp;other)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual MPCPRegReq *</type>
+      <name>dup</name>
+      <anchorfile>classMPCPRegReq.html</anchorfile>
+      <anchor>ac3a2d6b374338a3f40bbe95001246ad8</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>parsimPack</name>
+      <anchorfile>classMPCPRegReq.html</anchorfile>
+      <anchor>ac80d99696577d1a22a3320d32c52511f</anchor>
+      <arglist>(cCommBuffer *b)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>parsimUnpack</name>
+      <anchorfile>classMPCPRegReq.html</anchorfile>
+      <anchor>ab68594fefdd9f44a262ccd17245e8e0c</anchor>
+      <arglist>(cCommBuffer *b)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint8_t</type>
+      <name>getPtpNumReq</name>
+      <anchorfile>classMPCPRegReq.html</anchorfile>
+      <anchor>afe629188e375ac54dc6df080a78f779e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setPtpNumReq</name>
+      <anchorfile>classMPCPRegReq.html</anchorfile>
+      <anchor>ae00ff280cdd667c8c4bb8e303d890ba4</anchor>
+      <arglist>(uint8_t ptpNumReq_var)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>operator==</name>
+      <anchorfile>classMPCPRegReq.html</anchorfile>
+      <anchor>ad98a4158fd391fa9da5efc4096b6ee11</anchor>
+      <arglist>(const MPCPRegReq &amp;)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint8_t</type>
+      <name>ptpNumReq_var</name>
+      <anchorfile>classMPCPRegReq.html</anchorfile>
+      <anchor>a243a9e6d818b12585b97b3948ee58e40</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>MPCPReport</name>
+    <filename>classMPCPReport.html</filename>
+    <base>MPCP</base>
+    <member kind="function">
+      <type></type>
+      <name>MPCPReport</name>
+      <anchorfile>classMPCPReport.html</anchorfile>
+      <anchor>a90d2c7d26fdad0da1697e5dc20dd7105</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>MPCPReport</name>
+      <anchorfile>classMPCPReport.html</anchorfile>
+      <anchor>ab327e5057e0af99630f61ebce88648e2</anchor>
+      <arglist>(const MPCPReport &amp;other)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~MPCPReport</name>
+      <anchorfile>classMPCPReport.html</anchorfile>
+      <anchor>ae5776f4c5c3d85cfe71e97c2700b23bb</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>MPCPReport &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classMPCPReport.html</anchorfile>
+      <anchor>a26dfc52971470072fb364507612c2327</anchor>
+      <arglist>(const MPCPReport &amp;other)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual MPCPReport *</type>
+      <name>dup</name>
+      <anchorfile>classMPCPReport.html</anchorfile>
+      <anchor>ae5332aa0ef9c72ec4d4b129684e7ca8b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>parsimPack</name>
+      <anchorfile>classMPCPReport.html</anchorfile>
+      <anchor>ad5f570d10ca86040733663a0498170c8</anchor>
+      <arglist>(cCommBuffer *b)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>parsimUnpack</name>
+      <anchorfile>classMPCPReport.html</anchorfile>
+      <anchor>ae2e40f29f30fd66687a33c14b2be32e2</anchor>
+      <arglist>(cCommBuffer *b)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint8_t</type>
+      <name>getBitMap</name>
+      <anchorfile>classMPCPReport.html</anchorfile>
+      <anchor>aed46db443aceaccdbacd67f7f9a4dbaf</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setBitMap</name>
+      <anchorfile>classMPCPReport.html</anchorfile>
+      <anchor>ab51ac508d7921441ffc63686129181e1</anchor>
+      <arglist>(uint8_t bitMap_var)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setQInfoArraySize</name>
+      <anchorfile>classMPCPReport.html</anchorfile>
+      <anchor>a2265d793690c2c8aec6fc4d1ead4d04b</anchor>
+      <arglist>(unsigned int size)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual unsigned int</type>
+      <name>getQInfoArraySize</name>
+      <anchorfile>classMPCPReport.html</anchorfile>
+      <anchor>a4db1eb1efc9c955b2f7bf048a38c0c76</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint32_t</type>
+      <name>getQInfo</name>
+      <anchorfile>classMPCPReport.html</anchorfile>
+      <anchor>a0984e3b8a4187069e0b08623a175986b</anchor>
+      <arglist>(unsigned int k) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setQInfo</name>
+      <anchorfile>classMPCPReport.html</anchorfile>
+      <anchor>afed76befee3f5353cb4d10b974aea14f</anchor>
+      <arglist>(unsigned int k, uint32_t qInfo_var)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>operator==</name>
+      <anchorfile>classMPCPReport.html</anchorfile>
+      <anchor>ad0640cffbf5daadacc098d03a7d3c431</anchor>
+      <arglist>(const MPCPReport &amp;)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint8_t</type>
+      <name>bitMap_var</name>
+      <anchorfile>classMPCPReport.html</anchorfile>
+      <anchor>ae95414bd251c6fcff781f54728d3b586</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint32_t *</type>
+      <name>qInfo_var</name>
+      <anchorfile>classMPCPReport.html</anchorfile>
+      <anchor>afc01bff8bd0e8ba7eb15c191d06feafe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>unsigned int</type>
+      <name>qInfo_arraysize</name>
+      <anchorfile>classMPCPReport.html</anchorfile>
+      <anchor>a0b5dc6f8e49caa6d9d821c0acfd6a4af</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>MPCPTools</name>
+    <filename>classMPCPTools.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>MPCPTools</name>
+      <anchorfile>classMPCPTools.html</anchorfile>
+      <anchor>a05194f004592c4911803a4d086021f2e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~MPCPTools</name>
+      <anchorfile>classMPCPTools.html</anchorfile>
+      <anchor>a1824808d4957cbda6fd84230c5c45996</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>setGateLen</name>
+      <anchorfile>classMPCPTools.html</anchorfile>
+      <anchor>a1492dd6adbfd7d567a3ed6621ab0991c</anchor>
+      <arglist>(MPCPGate &amp;gate, uint8_t len)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static uint64_t</type>
+      <name>simTimeToNS16</name>
+      <anchorfile>classMPCPTools.html</anchorfile>
+      <anchor>acb405d0b706b3d106604fdc8f442de9d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static uint64_t</type>
+      <name>simTimeToNS16</name>
+      <anchorfile>classMPCPTools.html</anchorfile>
+      <anchor>a291841fe5076cadfe6ea2a01fccf9b76</anchor>
+      <arglist>(uint64_t time)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static uint64_t</type>
+      <name>ns16ToSimTime</name>
+      <anchorfile>classMPCPTools.html</anchorfile>
+      <anchor>a1013f56301a3f993a5d30b238ac901cc</anchor>
+      <arglist>(uint64_t time)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static uint64_t</type>
+      <name>nsToSimTime</name>
+      <anchorfile>classMPCPTools.html</anchorfile>
+      <anchor>a67cddc1e61345620f103f23311a4102a</anchor>
+      <arglist>(uint64_t time)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static uint64_t</type>
+      <name>bitsToNS16</name>
+      <anchorfile>classMPCPTools.html</anchorfile>
+      <anchor>aad3dded8a89fb9b2737eefdb40408bc2</anchor>
+      <arglist>(uint64_t bits, uint8_t gigRate)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static uint64_t</type>
+      <name>bytesToNS16</name>
+      <anchorfile>classMPCPTools.html</anchorfile>
+      <anchor>adb2bf3f82cc100f30e2900963a59d27c</anchor>
+      <arglist>(uint64_t bytes, uint8_t gigRate)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static uint64_t</type>
+      <name>ns16ToBits</name>
+      <anchorfile>classMPCPTools.html</anchorfile>
+      <anchor>a0f28416481427d7c3284f661e7f4b942</anchor>
+      <arglist>(uint64_t ns16, uint8_t gigRate)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static uint64_t</type>
+      <name>ns16ToBytes</name>
+      <anchorfile>classMPCPTools.html</anchorfile>
+      <anchor>a9c2ff50da3a4a2336a4918cf794742bb</anchor>
+      <arglist>(uint64_t ns16, uint8_t gigRate)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>OLT_QPL_RR</name>
+    <filename>classOLT__QPL__RR.html</filename>
+    <base>OLTQPerLLiDBase</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~OLT_QPL_RR</name>
+      <anchorfile>classOLT__QPL__RR.html</anchorfile>
+      <anchor>a7b182a2afd6a416e122eaf505f5794cb</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classOLT__QPL__RR.html</anchorfile>
+      <anchor>a30a3663847c9f0cda13bb6ff63e658f2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>requestPacket</name>
+      <anchorfile>classOLT__QPL__RR.html</anchorfile>
+      <anchor>af02f5b1a24ce48e5283b1f4f4b9590fb</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>OLTMacCtl_NP</name>
+    <filename>classOLTMacCtl__NP.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~OLTMacCtl_NP</name>
+      <anchorfile>classOLTMacCtl__NP.html</anchorfile>
+      <anchor>a55302b274d9595f1f5d71c79a56e1cc4</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classOLTMacCtl__NP.html</anchorfile>
+      <anchor>a35d81f4eee0d283aa228b50ad4325a88</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleMessage</name>
+      <anchorfile>classOLTMacCtl__NP.html</anchorfile>
+      <anchor>aa542506f63468e9ccb70be15e4a0e91c</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>processFrameFromHigherLayer</name>
+      <anchorfile>classOLTMacCtl__NP.html</anchorfile>
+      <anchor>a1117bd137cf742d5a29cce19d3c8b916</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>processFrameFromMAC</name>
+      <anchorfile>classOLTMacCtl__NP.html</anchorfile>
+      <anchor>a799bee80066f14a2b96fb11369a1d41b</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>clockSync</name>
+      <anchorfile>classOLTMacCtl__NP.html</anchorfile>
+      <anchor>af0245e2b72acea0a751921b4abd1f9d9</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleTxEnd</name>
+      <anchorfile>classOLTMacCtl__NP.html</anchorfile>
+      <anchor>a75b57e0952e4d194301878b9df493513</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>doTransmit</name>
+      <anchorfile>classOLTMacCtl__NP.html</anchorfile>
+      <anchor>a4480d7889280cc1e0be793560f9d5b00</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual cModule *</type>
+      <name>getNeighbourOnGate</name>
+      <anchorfile>classOLTMacCtl__NP.html</anchorfile>
+      <anchor>ab831239c384a85cf2cdf6cdd62105dba</anchor>
+      <arglist>(const char *gate)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint32_t</type>
+      <name>clock_reg</name>
+      <anchorfile>classOLTMacCtl__NP.html</anchorfile>
+      <anchor>a5b425b42caa708ac4942275052fc2fc0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>IPassiveQueue *</type>
+      <name>queue_mod</name>
+      <anchorfile>classOLTMacCtl__NP.html</anchorfile>
+      <anchor>abb6fe9e1bfb928722c1669b53a26c901</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cQueue</type>
+      <name>tmp_queue</name>
+      <anchorfile>classOLTMacCtl__NP.html</anchorfile>
+      <anchor>a0f1e79d330fb59a61d842126e9e1c5b9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>transmitState</name>
+      <anchorfile>classOLTMacCtl__NP.html</anchorfile>
+      <anchor>a2c9aaeda89f93360a8b14baec5f04870</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cMessage *</type>
+      <name>txEnd</name>
+      <anchorfile>classOLTMacCtl__NP.html</anchorfile>
+      <anchor>a32e130943d1502ba7da3b0a9fef897f8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>numFramesFromHL</name>
+      <anchorfile>classOLTMacCtl__NP.html</anchorfile>
+      <anchor>a6437c5a381333c7ced97dab6c215a93f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>numFramesFromLL</name>
+      <anchorfile>classOLTMacCtl__NP.html</anchorfile>
+      <anchor>acb7a5087b903a82021514eb7a940941e</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>OLTQPerLLiDBase</name>
+    <filename>classOLTQPerLLiDBase.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>OLTQPerLLiDBase</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a1e0364756c83f3ec7e58bf99d998b7e7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~OLTQPerLLiDBase</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a608248f311a9182c347d6bb0c269589f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="typedef" protection="protected">
+      <type>std::vector&lt; QueuePerMacLLid &gt;</type>
+      <name>PonQueues</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a9ea8edadd43bff7481f16930d6a6a999</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a56f0e4d9c8a7d9177f52d2e24fc32dc4</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>finish</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>aea4abf74f75dd5a775c7cbe5737814f7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleMessage</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>ab62b5af40ff70e244e7ea0b7e5c16384</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>processFrameFromHigherLayer</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a6d6776a7367adb7563036c61828614ff</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>processFrameFromLowerLayer</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>af79fad010fc8bd1079fb7e9bc74eed70</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>processMPCP</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>afd30699aca06198af9f2b4bc6c97363b</anchor>
+      <arglist>(EthernetIIFrame *frame)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleRegTimeOut</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a4d573a9cf345c1571a99a76c8d043c18</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleMPCPReport</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>ac600adb76bc73ad954824a2ecd9c0941</anchor>
+      <arglist>(MPCPReport *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>doOnuRegistration</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a7c35ae769a03b76bbe8126e51d0a14da</anchor>
+      <arglist>(MACAddress mac)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual cModule *</type>
+      <name>findModuleUp</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>ad545dae8caa70624543e6070dab784c3</anchor>
+      <arglist>(const char *name)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>createONU_Q</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a9ae0e3660e3eb2e9d2d8fa0fec3b3819</anchor>
+      <arglist>(ONUTableEntry &amp;en)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>existsInPONQueues</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a05b4aa91883a31fe41f0f03b0ca2ac9c</anchor>
+      <arglist>(mac_llid ml)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>DoUpstreamDBA</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a14b5151c2f664d3d362076af3e2608d8</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>sendMPCPGateReg</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a7b3af2ae6072f4de1709afac5f2beabf</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SendGateUpdates</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a5fd4b38cc1e85328f59d3880533f95dd</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>checkIfAllEmpty</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a3c818f0cf98b25bf2932d9bda3778fed</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>int</type>
+      <name>getIndexForLLID</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>afc869f34f115c1fc1060058a965e90ca</anchor>
+      <arglist>(uint16_t llid)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>addSortedMacLLID</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a5e35308e217b610871382c48c99f486a</anchor>
+      <arglist>(QueuePerMacLLid tmp_qpml)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>QueuePerMacLLid *</type>
+      <name>getFastestQForMac</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a875a2f65e8834a78735355bd2fb4ff31</anchor>
+      <arglist>(const MACAddress &amp;mac)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>QueuePerMacLLid *</type>
+      <name>getFastestQForMac</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>acbbe22dca7282fb4a503433128347aea</anchor>
+      <arglist>(const std::string &amp;mac)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>uint16_t</type>
+      <name>getFastestLLiDForMac</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>af22b390c95b2e6e4bef0c46ad4b6a378</anchor>
+      <arglist>(const std::string &amp;mac)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>isEmpty</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a8ef5e93102e04083f7d57a2e029a227d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>uint64_t</type>
+      <name>getSuperSlot_ns</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>ae749241094a6d45b12426ac4c6bf4cd8</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>double</type>
+      <name>getSuperSlot_sec</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a3a4b73f411413dbca9945dca09dc12de</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>ONUTable *</type>
+      <name>onutbl</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a7265c34235b861daf6e34cd9bb8a35e6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>vector&lt; ONUTableEntry &gt;</type>
+      <name>temptbl</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a6d23ac5f1c08a034bd27fc1ddec7e831</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>vector&lt; cMessage * &gt;</type>
+      <name>pendingAck</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>aca076b309243ff57ea00b74562cd85a2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>SrvList *</type>
+      <name>serviceList</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>af3963c88dc900bb37cab7d77470fb85a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>regAckTimeOut</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a9ea4fc3a41a8f53e87b225f518e7a7a0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint16_t</type>
+      <name>slotLength</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a8208316cdc8ed31382ff6c52351c29d9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint16_t</type>
+      <name>slotNumber</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a97db811dcd4d4306e051b7d2bf2aee21</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int32_t</type>
+      <name>regTimeInt</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>acafc52f42287fda0adda85ebe95bd316</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>queueLimit</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a7762bc61444ff9f6a7de825b307465fe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint64_t</type>
+      <name>datarateLimit</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>ab687a7ea8997f7b21ab977fee6a6dc66</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>PonQueues</type>
+      <name>pon_queues</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a8e730aa4d85cdfcca713e314766a69df</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>bool</type>
+      <name>allQsEmpty</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>ae3e75c9e3058800bee83b9b07c324710</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>nextQIndex</name>
+      <anchorfile>classOLTQPerLLiDBase.html</anchorfile>
+      <anchor>a5a5c6a8009ac4e5d596e28be1f05f908</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>OLTQPerLLiDBase_P</name>
+    <filename>classOLTQPerLLiDBase__P.html</filename>
+    <base>OLT_QPL_RR</base>
+    <member kind="function">
+      <type></type>
+      <name>OLTQPerLLiDBase_P</name>
+      <anchorfile>classOLTQPerLLiDBase__P.html</anchorfile>
+      <anchor>a37e2056c7c8b6c172292a87303ec2c77</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~OLTQPerLLiDBase_P</name>
+      <anchorfile>classOLTQPerLLiDBase__P.html</anchorfile>
+      <anchor>a36ee31787335c273be7da1033653db0d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classOLTQPerLLiDBase__P.html</anchorfile>
+      <anchor>a866c1f32bd1a0f1629a9c0e90f27fc35</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleMessage</name>
+      <anchorfile>classOLTQPerLLiDBase__P.html</anchorfile>
+      <anchor>a4ab5d85c34194d6e7298675232167d68</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>sendSingleGate</name>
+      <anchorfile>classOLTQPerLLiDBase__P.html</anchorfile>
+      <anchor>a74a1d4618994ebd4bdeb3aa6e35bdf27</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SendGateUpdates</name>
+      <anchorfile>classOLTQPerLLiDBase__P.html</anchorfile>
+      <anchor>ae70d665135b604f9cac1ca5706ad2030</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>DoUpstreamDBA</name>
+      <anchorfile>classOLTQPerLLiDBase__P.html</anchorfile>
+      <anchor>af04ea16877cb5caad13d83b0a1b7a8fb</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>wMax</name>
+      <anchorfile>classOLTQPerLLiDBase__P.html</anchorfile>
+      <anchor>a8c765c71d1ac1039b9cb80b6bdb7b99a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>fixedWin</name>
+      <anchorfile>classOLTQPerLLiDBase__P.html</anchorfile>
+      <anchor>afb2b4895990627b8877d9fbecbbc320c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cMessage *</type>
+      <name>sendGateMsg</name>
+      <anchorfile>classOLTQPerLLiDBase__P.html</anchorfile>
+      <anchor>a3ebeb5c92aec6570fb960591b80f590c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>bool</type>
+      <name>pollerRunning</name>
+      <anchorfile>classOLTQPerLLiDBase__P.html</anchorfile>
+      <anchor>a2a0a690427d156ed2782e6bf54f6db3f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>nextONU</name>
+      <anchorfile>classOLTQPerLLiDBase__P.html</anchorfile>
+      <anchor>abff0421cdbbfb396165ad59029f80a46</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>simtime_t</type>
+      <name>expTxTime</name>
+      <anchorfile>classOLTQPerLLiDBase__P.html</anchorfile>
+      <anchor>aeeb153bc7fdef65d595f00e2cc710575</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>ONU_QPL_RR</name>
+    <filename>classONU__QPL__RR.html</filename>
+    <base>ONUQPerLLiDBase</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classONU__QPL__RR.html</anchorfile>
+      <anchor>a9afa7b83cd80b6ea5e240bfe072c737b</anchor>
+      <arglist>(int stage)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>requestPacket</name>
+      <anchorfile>classONU__QPL__RR.html</anchorfile>
+      <anchor>ad1b9452107ffa215a7ba8e90944c2263</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>ONUMacCtl_NP</name>
+    <filename>classONUMacCtl__NP.html</filename>
+    <base>ONUMacCtlBase</base>
+    <member kind="function">
+      <type></type>
+      <name>ONUMacCtl_NP</name>
+      <anchorfile>classONUMacCtl__NP.html</anchorfile>
+      <anchor>ab4307e9f55fedeebb224e8801123768a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~ONUMacCtl_NP</name>
+      <anchorfile>classONUMacCtl__NP.html</anchorfile>
+      <anchor>ab95ec87a291a13f65c281b6e191d5adf</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classONUMacCtl__NP.html</anchorfile>
+      <anchor>a5ffa6f0515adad31af660b696ae64405</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleMessage</name>
+      <anchorfile>classONUMacCtl__NP.html</anchorfile>
+      <anchor>a33f5cf946eec7c7aa9be64132cb3914d</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>processFrameFromHigherLayer</name>
+      <anchorfile>classONUMacCtl__NP.html</anchorfile>
+      <anchor>a121eedab5b48dca24530cfebbca9288d</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>processMPCP</name>
+      <anchorfile>classONUMacCtl__NP.html</anchorfile>
+      <anchor>a8a2971241fdf070c7a4eb42f355a716f</anchor>
+      <arglist>(EthernetIIFrame *frame)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>scheduleStartTxPeriod</name>
+      <anchorfile>classONUMacCtl__NP.html</anchorfile>
+      <anchor>a5eeae37afd1ce53b7245a3da0a91069b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>scheduleStopTxPeriod</name>
+      <anchorfile>classONUMacCtl__NP.html</anchorfile>
+      <anchor>a8d0254da56917bcd88bc7de62c46d488</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>startTxOnPON</name>
+      <anchorfile>classONUMacCtl__NP.html</anchorfile>
+      <anchor>a5731bf5d90c2876f256c6494d84c4a30</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleStopTxPeriod</name>
+      <anchorfile>classONUMacCtl__NP.html</anchorfile>
+      <anchor>ab62365f4dc4787fd7ce7f8d61582bb47</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>clockSync</name>
+      <anchorfile>classONUMacCtl__NP.html</anchorfile>
+      <anchor>adac2d1a3537f6cbd944a900b0cfc141f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>shiftStart1Slot</name>
+      <anchorfile>classONUMacCtl__NP.html</anchorfile>
+      <anchor>a7fcacd095b1100ac337bb8e35798a7a5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>shiftStartXSlots</name>
+      <anchorfile>classONUMacCtl__NP.html</anchorfile>
+      <anchor>a21d21569c768c65f20dddae0b305603d</anchor>
+      <arglist>(uint32_t X)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cMessage *</type>
+      <name>stopTxMsg</name>
+      <anchorfile>classONUMacCtl__NP.html</anchorfile>
+      <anchor>a91356d6f2777f8dd202f979d18c68f8e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="private" virtualness="virtual">
+      <type>virtual void</type>
+      <name>goToIDLE</name>
+      <anchorfile>classONUMacCtl__NP.html</anchorfile>
+      <anchor>ad16ac12e6930cc78d43894ba035efc0f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private" virtualness="virtual">
+      <type>virtual void</type>
+      <name>goToSLEEP</name>
+      <anchorfile>classONUMacCtl__NP.html</anchorfile>
+      <anchor>a8273e0ab2ee4a31cebd902ef91f0d52a</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>ONUMacCtl_P</name>
+    <filename>classONUMacCtl__P.html</filename>
+    <base>ONUMacCtlBase</base>
+    <member kind="function">
+      <type></type>
+      <name>ONUMacCtl_P</name>
+      <anchorfile>classONUMacCtl__P.html</anchorfile>
+      <anchor>a011943ebbda51f826c755126370e4741</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~ONUMacCtl_P</name>
+      <anchorfile>classONUMacCtl__P.html</anchorfile>
+      <anchor>a73924a636ac359cccb5b9b0f8db81472</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classONUMacCtl__P.html</anchorfile>
+      <anchor>a12e9e50584358ee3817c16edbb004d11</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>startTxOnPON</name>
+      <anchorfile>classONUMacCtl__P.html</anchorfile>
+      <anchor>a95f68cd3d914da42c3d252a41ae59249</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleMessage</name>
+      <anchorfile>classONUMacCtl__P.html</anchorfile>
+      <anchor>a93f8a0146e49acd88212336e960cca52</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>processFrameFromHigherLayer</name>
+      <anchorfile>classONUMacCtl__P.html</anchorfile>
+      <anchor>a1fecf3e8c2388c94349ca66276bb18fa</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>processMPCP</name>
+      <anchorfile>classONUMacCtl__P.html</anchorfile>
+      <anchor>a9ad296d6ce28bbca8879d095befce343</anchor>
+      <arglist>(EthernetIIFrame *frame)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>clockSync</name>
+      <anchorfile>classONUMacCtl__P.html</anchorfile>
+      <anchor>a77d64a22409070829fa8021e362f6b51</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>scheduleStartTxMsgFromRegister</name>
+      <anchorfile>classONUMacCtl__P.html</anchorfile>
+      <anchor>a3cbcfaed97e8bf8bef4c0accc3f38158</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>sendReport</name>
+      <anchorfile>classONUMacCtl__P.html</anchorfile>
+      <anchor>add3ec22265704b94527eb2a09fe9e635</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>scheduleReport</name>
+      <anchorfile>classONUMacCtl__P.html</anchorfile>
+      <anchor>acb5f01815ff99cc59baf7fd52a8ceed6</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>ONUQPerLLiDBase *</type>
+      <name>qpl</name>
+      <anchorfile>classONUMacCtl__P.html</anchorfile>
+      <anchor>ac07afdfceb50c71a72a9d6cdeec5ba96</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cMessage *</type>
+      <name>sendReportMsg</name>
+      <anchorfile>classONUMacCtl__P.html</anchorfile>
+      <anchor>a0abdd0699575bf70d2a5f47b28784e08</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>ONUMacCtlBase</name>
+    <filename>classONUMacCtlBase.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ONUMacCtlBase</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>a18435efaea08e2adaec42bba0d8a7d03</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~ONUMacCtlBase</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>ac2e7c002cf7dba5479b6f5fa32228a04</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>a0137cf8a14df90d754186fd668e45524</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>finish</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>af98d003373d7904ba69bd7f4c9d45846</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="pure">
+      <type>virtual void</type>
+      <name>startTxOnPON</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>accedb776fd223368fec60ebbf937f084</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>processFrameFromMAC</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>a25c02d7068d5311c39ac0b1faec3f1c6</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="pure">
+      <type>virtual void</type>
+      <name>processMPCP</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>a73e2d245fd886ba3f53ab59df9feaca3</anchor>
+      <arglist>(EthernetIIFrame *frame)=0</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual cModule *</type>
+      <name>getNeighbourOnGate</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>a8e1289c248943780e068c531e175d99a</anchor>
+      <arglist>(const char *gate)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>dumpReg</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>ad078503eedc052e38ee2363005a4c841</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>std::string</type>
+      <name>getStateStr</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>a041d250b612704bb53e5dd71cad3a436</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint64_t</type>
+      <name>txrate</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>add9425e1d96fe371068c89feaab41b7b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>EPON_mac *</type>
+      <name>emac</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>aa33e8db13b74bdf821d2b19d3be1ce4e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint32_t</type>
+      <name>clock_reg</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>a5ba39000daa630fdd573fd001d05040d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint32_t</type>
+      <name>start_reg</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>a12acb2413a73ef23daddb21a1060b8f2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint32_t</type>
+      <name>len_reg</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>a9f33b8e3c4a430187da32eb7b3024635</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>transmitState</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>ab4c5dac84f2fd65010f28eed3393b649</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>RTT</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>a4976f471e2366ef5d1fd8ee478d6b11e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint16_t</type>
+      <name>slotLength</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>adbc208f6eb55fbd4fcd4512133b47eb7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint16_t</type>
+      <name>slotNumber</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>ab0b101eecf208acb79feeb0732047f87</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>numGates</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>a13bae0a24f63d7823a8a8917ca95512f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>IPassiveQueue *</type>
+      <name>queue_mod</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>a824358e42beb5218bdbf3c56f314c119</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cQueue</type>
+      <name>tmp_queue</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>ab0bf602caed978d962282eb529c10ae8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>numFramesFromHL</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>a562396f2fc470faf915fcb171fed0f42</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>numFramesFromLL</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>a0caac87640b9776512f2292516fd1e37</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>numFramesFromHLDropped</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>a16a317867da7d86bff8fa1a64972b68a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>simtime_t</type>
+      <name>fragmentedTime</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>a64cdaee4d78a117bf438910bbef96cbb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cMessage *</type>
+      <name>startTxMsg</name>
+      <anchorfile>classONUMacCtlBase.html</anchorfile>
+      <anchor>ab3958b57b1ac0e0ac910c9522f2e4f42</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>ONUQPerLLiDBase</name>
+    <filename>classONUQPerLLiDBase.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ONUQPerLLiDBase</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>a829a988e869ed9767f248034d91af38c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~ONUQPerLLiDBase</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>a1b02b905aca6816d2900cdb3babd8b17</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>requestPacket</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>accfc88b3d5775a6853bc98840584e07b</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual MPCPReport *</type>
+      <name>requestMPCP_REPORT</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>a8dab2bf2c6295f4c4532a9a6f97675b1</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint16_t</type>
+      <name>getMPCPRepSize</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>aa868acd8e446143d07120901ed7ea90b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>isEmpty</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>a2d08a5c7330d012c30ca2d412f2b9f6d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="typedef" protection="protected">
+      <type>std::vector&lt; QueuePerLLid &gt;</type>
+      <name>PonQueues</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>adc4b0bd7a3ec2dace50ad78ef1714217</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>ab3d58cf3fc1eeda81f287ec2c682cfc2</anchor>
+      <arglist>(int stage)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual int</type>
+      <name>numInitStages</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>a71b4d8e30e4696b1393242daa3323204</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>finish</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>a08e210c1ce75e10b0661b51154306f5a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleMessage</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>ad443b84024ca761ba999369cea0ddd83</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>processFrameFromHigherLayer</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>ae07abd956695b65ea8a477675db448bf</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>processFrameFromLowerLayer</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>af9ce884ee347af25b5473044818fe703</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>checkLLIDforUs</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>a5fbf0e22e4e2dc6f2f3bd62de8bba00a</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual int</type>
+      <name>getIndexForLLID</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>ae83a8929a005520e6ac00e5a668f303c</anchor>
+      <arglist>(uint16_t llid)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual int</type>
+      <name>getDefaultLLiD</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>a17735ce192fb80b86fe5d0f483be3859</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>addSortedLLID</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>ab135adf2f3bdeadfb4a40a9b51476a38</anchor>
+      <arglist>(QueuePerLLid tmp_qpllid)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>checkIfAllEmpty</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>abcf4c5ddb613caa15edf375738034c96</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual int</type>
+      <name>getIndexForService</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>a8a33300d16f6541278aff62f769f1380</anchor>
+      <arglist>(std::string name)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>processMPCP</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>adae79b08c78f2507f90365d65030b767</anchor>
+      <arglist>(EthernetIIFrame *frame)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>sendMPCPReg</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>a9cef478d7506f19af7f1a948bf6caab4</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>startMPCPReg</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>affde37960d1ae9e3f070158113cd2554</anchor>
+      <arglist>(uint32_t regMaxRandomSleep)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>cModule *</type>
+      <name>findModuleUp</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>aa6beb12aead9da4f0f23b51a9cef1494</anchor>
+      <arglist>(const char *name)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>regTimeOut</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>ac606f2292264d63f9109f19bade56f6f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>numOfLLIDs</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>a8cd7c92cd3cd0efd872428f145e2f995</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>bool</type>
+      <name>allQsEmpty</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>a799b3ac02ea7e3b7c1f4d513892bbe09</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>bool</type>
+      <name>allQsBlocked</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>a540b5c0e6f8ba974358e046a5dace738</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>nextQIndex</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>a8e650a7b93b1bc43e970bae41a2b95cf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>queueLimit</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>a17a29180be1ca8f1e68a0b6bfe27e3e1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>granularity</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>af154b7e6f824a455292ba4e11b5a4651</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>SrvList *</type>
+      <name>serviceList</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>a81140d45b7b68a8c117daf43de2994e2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>PonQueues</type>
+      <name>pon_queues</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>a4a102747e626fc5d317810a9ad0b1ffb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cModule *</type>
+      <name>olt_mac</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>a4b6a938ce21d20c12e0e23e463ca063c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>MACAddress</type>
+      <name>opt_mac</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>a4e9a1a4a48c094d0fd38302f5a5c6ccd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cMessage *</type>
+      <name>regTOMsg</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>a4dd8b975864c5097f6e76bcecc11dc86</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cMessage *</type>
+      <name>regSendMsg</name>
+      <anchorfile>classONUQPerLLiDBase.html</anchorfile>
+      <anchor>a31fb7ad553ee17ddeb2ec4f244374c3f</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>ONUTable</name>
+    <filename>classONUTable.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>addONU</name>
+      <anchorfile>classONUTable.html</anchorfile>
+      <anchor>a626fcb83683377f57134b94a4228b239</anchor>
+      <arglist>(ONUTableEntry &amp;entry)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>removeONU</name>
+      <anchorfile>classONUTable.html</anchorfile>
+      <anchor>af0e92ca75a9eba247bb0bf744179833c</anchor>
+      <arglist>(MACAddress id)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>removeONU</name>
+      <anchorfile>classONUTable.html</anchorfile>
+      <anchor>a87a7d4b5633ea4ff5e9b8672434d619b</anchor>
+      <arglist>(uint32_t idx)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual ONUTableEntry *</type>
+      <name>getEntry</name>
+      <anchorfile>classONUTable.html</anchorfile>
+      <anchor>aeedba97929cbbc313bf842f76e356673</anchor>
+      <arglist>(uint32_t idx)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual ONUTableEntry *</type>
+      <name>getEntry</name>
+      <anchorfile>classONUTable.html</anchorfile>
+      <anchor>ab82ae7cde2d762ed3aca25045072b996</anchor>
+      <arglist>(MACAddress id)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual ONUTableEntry *</type>
+      <name>getEntry</name>
+      <anchorfile>classONUTable.html</anchorfile>
+      <anchor>ae03acbcbb002a37b50f004a4db921c73</anchor>
+      <arglist>(std::string id)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>getTableSize</name>
+      <anchorfile>classONUTable.html</anchorfile>
+      <anchor>afed311bc83000140b194059994374b63</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual MACAddress</type>
+      <name>getMACFromString</name>
+      <anchorfile>classONUTable.html</anchorfile>
+      <anchor>a42c833bfb42e6930dce3bcba199e02f1</anchor>
+      <arglist>(std::string id)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classONUTable.html</anchorfile>
+      <anchor>a44579b8b0b01af3475c231fe481d9fee</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleMessage</name>
+      <anchorfile>classONUTable.html</anchorfile>
+      <anchor>ac54642ee30463d35f01970de15717d94</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>vector&lt; ONUTableEntry &gt;</type>
+      <name>tbl</name>
+      <anchorfile>classONUTable.html</anchorfile>
+      <anchor>a02cae3dd43e406cec041203615365479</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>ONUTableEntry</name>
+    <filename>classONUTableEntry.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ONUTableEntry</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>a74585b4e59f8c9a2bb7b7ebb1a472a7b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ONUTableEntry</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>a74062503ca0d2005466aca1d98d8b3fd</anchor>
+      <arglist>(const ONUTableEntry &amp;en)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~ONUTableEntry</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>ab335cde95d13d858996860e5afde57b1</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setId</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>ad2a465087122fb0c1a99a90fe31dfaa7</anchor>
+      <arglist>(MACAddress &amp;mac)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setRTT</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>a1a8d5fcf1430e71d402b9680ce4fe783</anchor>
+      <arglist>(uint32_t rtt)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>addLLID</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>a72689aa04d7c1e16fde917207a550681</anchor>
+      <arglist>(uint16_t llid)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>removeLLID</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>a331e14151c1c410dad90fdfe9319a8e3</anchor>
+      <arglist>(int idx)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setComTime</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>a956262388edb6c942d01d7b311e68aaa</anchor>
+      <arglist>(CommitedTime t)</arglist>
+    </member>
+    <member kind="function">
+      <type>MACAddress</type>
+      <name>getId</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>acd4a5a20f01a363c305ea401e5473555</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>uint16_t</type>
+      <name>getRTT</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>a38f491d5b5d5e6188b81aedfb644e0fb</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>uint16_t</type>
+      <name>getLLID</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>ae9d1853ee18e69e6d8fbf6b7371cbf2a</anchor>
+      <arglist>(int idx)</arglist>
+    </member>
+    <member kind="function">
+      <type>vector&lt; uint16_t &gt; &amp;</type>
+      <name>getLLIDs</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>a886d938a4b40eaa1064ec6e9a0130ec6</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getLLIDsNum</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>ac5f10c076edfc5c4365b095b1d5d95fa</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>CommitedTime</type>
+      <name>getComTime</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>a52a4c17a0ff95becf1a25e30bb40e2d2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isValid</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>aa9f65dede1426eb2e2280cfd6ce605f0</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual cObject *</type>
+      <name>dup</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>a1c3cf51c0fb62e8861fffeb585391de7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual std::string</type>
+      <name>info</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>a29a09ae66ab1a859526e6fc0e4536ef2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>ONUTableEntry &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>ad46ade476ce5711073a681249bbf4b12</anchor>
+      <arglist>(const ONUTableEntry &amp;en)</arglist>
+    </member>
+    <member kind="variable">
+      <type>uint32_t</type>
+      <name>req</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>ac5010b2117184f6925e39029403636c8</anchor>
+      <arglist>[8]</arglist>
+    </member>
+    <member kind="variable">
+      <type>uint32_t</type>
+      <name>totalReq</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>a62888f4821bbb92b28a5b27d0828b6df</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>MACAddress</type>
+      <name>id</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>aab9ca4bfaf8df0b780ed9d5e287e63d3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint16_t</type>
+      <name>RTT</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>af256b82a2bc7db433955f577e2a7891d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>vector&lt; uint16_t &gt;</type>
+      <name>LLIDs</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>a3f16715418de0b27d7c20440b6a30553</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>CommitedTime</type>
+      <name>comTimes</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>a1f55f538e9b389d4211311c03958e7fa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="friend">
+      <type>friend std::ostream &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>classONUTableEntry.html</anchorfile>
+      <anchor>abbabdda9c2f391a8ce88268b571af2ab</anchor>
+      <arglist>(std::ostream &amp;out, const ONUTableEntry &amp;en)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PON_Splitter</name>
+    <filename>classPON__Splitter.html</filename>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classPON__Splitter.html</anchorfile>
+      <anchor>a12972089bd26060d2c197965bf99bc06</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleMessage</name>
+      <anchorfile>classPON__Splitter.html</anchorfile>
+      <anchor>ab8d388866ebe6e1322dc6af6c2b86de5</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>finish</name>
+      <anchorfile>classPON__Splitter.html</anchorfile>
+      <anchor>a70e34dd9d769027a2a1f662ba455c720</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>printUpStreamDebug</name>
+      <anchorfile>classPON__Splitter.html</anchorfile>
+      <anchor>a3dcb22b1b5e0f23823181b41f80313cc</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>ports</name>
+      <anchorfile>classPON__Splitter.html</anchorfile>
+      <anchor>a91fbe9e062e15bd2c65a702e28119ea6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint32_t</type>
+      <name>col_upstream</name>
+      <anchorfile>classPON__Splitter.html</anchorfile>
+      <anchor>ad186f14bdc89c0034dee11f1f32f95c7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint32_t</type>
+      <name>col_downstream</name>
+      <anchorfile>classPON__Splitter.html</anchorfile>
+      <anchor>a4069cc0836c479e4ae030b4ce5de7532</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>long</type>
+      <name>numMessages</name>
+      <anchorfile>classPON__Splitter.html</anchorfile>
+      <anchor>a956df7b0b537c58fd810ca0314b1b66d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cMessage *</type>
+      <name>previousMsg</name>
+      <anchorfile>classPON__Splitter.html</anchorfile>
+      <anchor>a47f0a891e0d805f9e2f7bb37e0e46d84</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>uint32_t</type>
+      <name>haltOn</name>
+      <anchorfile>classPON__Splitter.html</anchorfile>
+      <anchor>afc3882da9b80e9b94e9642aa6d94e2b8</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>QueuePerLLid</name>
+    <filename>classQueuePerLLid.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>QueuePerLLid</name>
+      <anchorfile>classQueuePerLLid.html</anchorfile>
+      <anchor>a2e14fa70cc0d763ff884a825708a757f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~QueuePerLLid</name>
+      <anchorfile>classQueuePerLLid.html</anchorfile>
+      <anchor>a7c60a7f78f82424b73db408d74bf04a8</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable">
+      <type>uint16_t</type>
+      <name>llid</name>
+      <anchorfile>classQueuePerLLid.html</anchorfile>
+      <anchor>a0c620a9cb52c96647acbf6c4a154ee0d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>isDefault</name>
+      <anchorfile>classQueuePerLLid.html</anchorfile>
+      <anchor>a0a1f37f86b9ee73cde90431324ea597f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="friend">
+      <type>friend std::ostream &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>classQueuePerLLid.html</anchorfile>
+      <anchor>a8bfc67a1d9530b6f6a26baf6044307a7</anchor>
+      <arglist>(std::ostream &amp;out, QueuePerLLid &amp;ql)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>QueuePerMacLLid</name>
+    <filename>classQueuePerMacLLid.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>QueuePerMacLLid</name>
+      <anchorfile>classQueuePerMacLLid.html</anchorfile>
+      <anchor>a201f0ed81e3df09a782cc285917b699d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~QueuePerMacLLid</name>
+      <anchorfile>classQueuePerMacLLid.html</anchorfile>
+      <anchor>a2584b5d5c1a56a2735d0b51441b926cc</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable">
+      <type>mac_llid</type>
+      <name>ml</name>
+      <anchorfile>classQueuePerMacLLid.html</anchorfile>
+      <anchor>aa106b8124df1194bcc777c3edd6d958b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>isDefault</name>
+      <anchorfile>classQueuePerMacLLid.html</anchorfile>
+      <anchor>a20c92c28e117c8d85733bb15bc788f0a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="friend">
+      <type>friend std::ostream &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>classQueuePerMacLLid.html</anchorfile>
+      <anchor>a85153d5a80a660c167b5003aabdd7bbb</anchor>
+      <arglist>(std::ostream &amp;out, QueuePerMacLLid &amp;qml)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>ServiceConfig</name>
+    <filename>classServiceConfig.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ServiceConfig</name>
+      <anchorfile>classServiceConfig.html</anchorfile>
+      <anchor>a50471f114660139dd923d572cc3adbe1</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>getLowPriorityService</name>
+      <anchorfile>classServiceConfig.html</anchorfile>
+      <anchor>a39818212348851fb1e0d5dfa077d21f6</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>getHighPriorityService</name>
+      <anchorfile>classServiceConfig.html</anchorfile>
+      <anchor>acffdfe46bf989996dbe4bb510aa53f5f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable">
+      <type>SrvList</type>
+      <name>srvs</name>
+      <anchorfile>classServiceConfig.html</anchorfile>
+      <anchor>aae38a67a9a8d29e9bcde6d2ab0a8f873</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classServiceConfig.html</anchorfile>
+      <anchor>ac5e8052ed9b672ef287549e46d2c3c00</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleMessage</name>
+      <anchorfile>classServiceConfig.html</anchorfile>
+      <anchor>a3537a2e953b8b582d6c746b196e945a6</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>SyncCode</name>
+    <filename>classSyncCode.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>SyncCode</name>
+      <anchorfile>classSyncCode.html</anchorfile>
+      <anchor>a8c532e582b4f05ca4a1029f2a56fc92f</anchor>
+      <arglist>(const char *name=NULL, int kind=0)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>SyncCode</name>
+      <anchorfile>classSyncCode.html</anchorfile>
+      <anchor>a1018683ee4bd4422cf152ee7c4429200</anchor>
+      <arglist>(const SyncCode &amp;other)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~SyncCode</name>
+      <anchorfile>classSyncCode.html</anchorfile>
+      <anchor>a5dee52945026a045443fdd7f8c10b21e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>SyncCode &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classSyncCode.html</anchorfile>
+      <anchor>a300bad9e0e2c81660f7442c0091fd33d</anchor>
+      <arglist>(const SyncCode &amp;other)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual SyncCode *</type>
+      <name>dup</name>
+      <anchorfile>classSyncCode.html</anchorfile>
+      <anchor>a39e0acff0cbf8a6713368f18d94fc3b5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>parsimPack</name>
+      <anchorfile>classSyncCode.html</anchorfile>
+      <anchor>ab6a9513a26a065d12c13443c887f06f1</anchor>
+      <arglist>(cCommBuffer *b)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>parsimUnpack</name>
+      <anchorfile>classSyncCode.html</anchorfile>
+      <anchor>a839dcd45d5dbc3fe84c8f866b7b5651e</anchor>
+      <arglist>(cCommBuffer *b)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual char</type>
+      <name>getCode</name>
+      <anchorfile>classSyncCode.html</anchorfile>
+      <anchor>aeb0b0b121cf279c0da9aad522e5c5b8a</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setCode</name>
+      <anchorfile>classSyncCode.html</anchorfile>
+      <anchor>a0fd92bfc43e810506eeacab146ca2376</anchor>
+      <arglist>(char code_var)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>operator==</name>
+      <anchorfile>classSyncCode.html</anchorfile>
+      <anchor>a01306b5469519485ffeb717ddc275fe0</anchor>
+      <arglist>(const SyncCode &amp;)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>char</type>
+      <name>code_var</name>
+      <anchorfile>classSyncCode.html</anchorfile>
+      <anchor>a31497fe141332e07bb10d85b94f1adcc</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="dir">
+    <name>src/common/</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/common/</path>
+    <filename>dir_be517c9ec92caae971d3e398f5c0715e.html</filename>
+    <file>CopyableQueueCVectors.cc</file>
+    <file>CopyableQueueCVectors.h</file>
+    <file>EPON_CtrlInfo.cc</file>
+    <file>EPON_CtrlInfo.h</file>
+    <file>EPON_mac.cc</file>
+    <file>EPON_mac.h</file>
+    <file>EPON_messages_m.h</file>
+    <file>MPCP_codes.h</file>
+    <file>MPCPTools.cc</file>
+    <file>MPCPTools.h</file>
+    <file>ServiceConfig.cc</file>
+    <file>ServiceConfig.h</file>
+  </compound>
+  <compound kind="dir">
+    <name>src/OLT/</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/OLT/</path>
+    <filename>dir_ff3877ac115f4efeca3d8e7582637944.html</filename>
+    <file>EPON_OLT_relayDefault.cc</file>
+    <file>EPON_OLT_relayDefault.h</file>
+    <file>EPON_OLT_vlanBridgeRelay.cc</file>
+    <file>EPON_OLT_vlanBridgeRelay.h</file>
+    <file>OLT_QPL_RR.cc</file>
+    <file>OLT_QPL_RR.h</file>
+    <file>OLTMacCtl_NP.cc</file>
+    <file>OLTMacCtl_NP.h</file>
+    <file>OLTQPerLLiDBase.cc</file>
+    <file>OLTQPerLLiDBase.h</file>
+    <file>OLTQPerLLiDBase_P.cc</file>
+    <file>OLTQPerLLiDBase_P.h</file>
+    <file>ONUTable.cc</file>
+    <file>ONUTable.h</file>
+    <file>ONUTableEntry.cc</file>
+    <file>ONUTableEntry.h</file>
+  </compound>
+  <compound kind="dir">
+    <name>src/ONU/</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/ONU/</path>
+    <filename>dir_91f944393609f0c9beef13938ce69e9c.html</filename>
+    <file>EPON_ONU_relayDefault.cc</file>
+    <file>EPON_ONU_relayDefault.h</file>
+    <file>EPON_ONU_vlanBridgeRelay.cc</file>
+    <file>EPON_ONU_vlanBridgeRelay.h</file>
+    <file>ONU_QPL_RR.cc</file>
+    <file>ONU_QPL_RR.h</file>
+    <file>ONUMacCtl_NP.cc</file>
+    <file>ONUMacCtl_NP.h</file>
+    <file>ONUMacCtl_P.cc</file>
+    <file>ONUMacCtl_P.h</file>
+    <file>ONUMacCtlBase.cc</file>
+    <file>ONUMacCtlBase.h</file>
+    <file>ONUQPerLLiDBase.cc</file>
+    <file>ONUQPerLLiDBase.h</file>
+  </compound>
+  <compound kind="dir">
+    <name>src/</name>
+    <path>/media/data/phD/code/omnetpp/PON/src/</path>
+    <filename>dir_dcddc9bb9554527976ab77b35d5c64b4.html</filename>
+    <dir>src/common/</dir>
+    <dir>src/OLT/</dir>
+    <dir>src/ONU/</dir>
+    <file>PON_Splitter.cc</file>
+    <file>PON_Splitter.h</file>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title>EPON for OMNeT++ (4.0 - 4.1)</title>
+    <filename>index</filename>
+    <docanchor file="index">Layers</docanchor>
+    <docanchor file="index">Dependencies</docanchor>
+    <docanchor file="index">DESCRIPTION</docanchor>
+    <docanchor file="index">EXTENDING</docanchor>
+    <docanchor file="index">Troubleshooting</docanchor>
+    <docanchor file="index">BASIC</docanchor>
+    <docanchor file="index">INSTALLATION</docanchor>
+    <docanchor file="index">NOTES</docanchor>
+    <docanchor file="index">a</docanchor>
+    <docanchor file="index">PON_Splitter</docanchor>
+  </compound>
+</tagfile>

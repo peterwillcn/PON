@@ -1,0 +1,71 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Module Interface <i>OLTMacCtl</i></h2>
+<b>Package:</b> PON.OLT<br/><b>File: <a href="src-OLT-OLTMacCtl.ned.html">src/OLT/OLTMacCtl.ned</a></b><br/>
+<p>TODO auto-generated module</p>
+<img src="PON.OLT.OLTMacCtl-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="PON.OLT.OLTMacCtl.html" title="OLTMacCtl" alt="OLTMacCtl" coords="0,0,225,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+<img src="PON.OLT.OLTMacCtl-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" id="node1" href="PON.OLT.OLTMacCtl.html" title="Module Interface OLTMacCtl" alt="" coords="5,83,93,111">
+<area shape="rect" id="node2" href="PON.OLT.OLT_IF.html" title="Compound Module OLT_IF" alt="" coords="13,6,85,34">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+<img src="PON.OLT.OLTMacCtl-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" id="node1" href="PON.OLT.OLTMacCtl.html" title="Module Interface OLTMacCtl" alt="" coords="19,6,107,34">
+<area shape="rect" id="node2" href="PON.OLT.OLTMacCtl_NP.html" title="Simple Module OLTMacCtl_NP" alt="" coords="5,83,120,111">
+</map>
+<h3 class="subtitle">Used in compound modules:</h3>
+<p>If a module type shows up more than once, that means it has been defined in more than one NED file.</p>
+<table>
+<tr>
+   <td>
+      <a href="PON.OLT.OLT_IF.html">OLT_IF</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>TODO auto-generated module</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">display</td>
+   <td width="100"><i>i=block/queue</i></td>
+   <td>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// TODO auto-generated module
+//
+</span><span style="color: #800000; font-weight: bold; ">moduleinterface</span><span style="color: #000000; "> </span><span style="color: #000000; ">OLTMacCtl</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;i=block/queue&quot;</span><span style="color: #000000; ">);
+
+
+    </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">upperLayerIn</span><span style="color: #000000; ">;   </span><span style="color: #808080; font-style: italic; ">// higher layer protocols or applications
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">upperLayerOut</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// higher layer protocols or applications
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">lowerLayerIn</span><span style="color: #000000; ">;     </span><span style="color: #808080; font-style: italic; ">// to Ethernet MAC
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">lowerLayerOut</span><span style="color: #000000; ">;   </span><span style="color: #808080; font-style: italic; ">// to Ethernet MAC
+</span><span style="color: #000000; ">}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

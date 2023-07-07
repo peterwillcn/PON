@@ -1,0 +1,8 @@
+<area shape="rect" id="node1" href="ponTCP.html" title="Network ponTCP" alt="" coords="387,6,459,34">
+<area shape="rect" id="node2" href="PON.ONU.EPON_ONU.html" title="Compound Module EPON_ONU" alt="" coords="5,83,101,111">
+<area shape="rect" id="node4" href="PON.PON_Splitter.html" title="Simple Module PON_Splitter" alt="" coords="125,83,224,111">
+<area shape="rect" id="node6" href="PON.OLT.EPON_OLT.html" title="Compound Module EPON_OLT" alt="" coords="248,83,339,111">
+<area shape="rect" id="node8" href="ned.DatarateChannel.html" title="Channel DatarateChannel" alt="" coords="363,83,483,111">
+<area shape="rect" id="node10" href="../../../inetmanet/doc/neddoc/inet.networklayer.autorouting.FlatNetworkConfigurator.html" title="Simple Module FlatNetworkConfigurator" alt="" coords="507,83,669,111">
+<area shape="rect" id="node12" href="../../../inetmanet/doc/neddoc/inet.nodes.inet.StandardHost.html" title="Compound Module StandardHost" alt="" coords="693,83,795,111">
+<area shape="rect" id="node14" href="ponTCP.GFX.html" title="Channel GFX" alt="" coords="819,83,891,111">

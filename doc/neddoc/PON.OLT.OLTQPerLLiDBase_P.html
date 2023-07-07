@@ -1,0 +1,179 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Simple Module <i>OLTQPerLLiDBase_P</i></h2>
+<b>Package:</b> PON.OLT<br/><b>File: <a href="src-OLT-OLTQPerLLiDBase_P.ned.html">src/OLT/OLTQPerLLiDBase_P.ned</a></b><br/><p><a href="../doxy/classOLTQPerLLiDBase__P.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>This module overrides the Base functionality to support polling 
+implementations/algorithms</p>
+<img src="PON.OLT.OLTQPerLLiDBase_P-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="PON.OLT.OLTQPerLLiDBase_P.html" title="OLTQPerLLiDBase_P" alt="OLTQPerLLiDBase_P" coords="0,0,163,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+<img src="PON.OLT.OLTQPerLLiDBase_P-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" id="node1" href="PON.OLT.OLTQPerLLiDBase_P.html" title="Simple Module OLTQPerLLiDBase_P" alt="" coords="5,6,155,34">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+<img src="PON.OLT.OLTQPerLLiDBase_P-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" id="node1" href="PON.OLT.OLTQPerLLiDBase_P.html" title="Simple Module OLTQPerLLiDBase_P" alt="" coords="5,83,155,111">
+<area shape="rect" id="node2" href="PON.OLT.OLT_Q_mgmt.html" title="Module Interface OLT_Q_mgmt" alt="" coords="28,6,132,34">
+</map>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">slotLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">3000ns</td>
+   <td>   </td>
+</tr>
+<tr class="local">
+   <td width="150">slotNumber</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">128</td>
+   <td>   </td>
+</tr>
+<tr class="local">
+   <td width="150">regTimeInt</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">100ms</td>
+   <td>   </td>
+</tr>
+<tr class="local">
+   <td width="150">regAckTimeOut</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">500ms</td>
+   <td>   </td>
+</tr>
+<tr class="local">
+   <td width="150">queueLimit</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">100</td>
+   <td>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">datarateLimit</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">-1Mbps</td>
+   <td>
+<p>Limit the assigned bandwidth to scale down the simulation</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">wMax</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">1ms</td>
+   <td>
+<p>Polling parameters</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">fixedWin</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">0.5ms</td>
+   <td>
+<p>Maximum window for FIXED Service (500000 bits/cycle - 40 frames of 1500B)</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">display</td>
+   <td width="100"><i>i=block/fork</i></td>
+   <td>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Gates:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Direction</th>
+      <th>Size</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">lowerLayerIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">lowerLayerOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">upperLayerIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">upperLayerOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// This module overrides the Base functionality to support polling 
+// implementations/algorithms
+//
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">OLTQPerLLiDBase_P</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">like</span><span style="color: #000000; "> </span><span style="color: #000000; ">OLT_Q_mgmt</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">slotLength</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;ns&quot;</span><span style="color: #000000; ">) = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">3000</span><span style="color: #000000; ">ns</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">slotNumber</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">128</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">regTimeInt</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;ms&quot;</span><span style="color: #000000; ">) = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">100</span><span style="color: #000000; ">ms</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">regAckTimeOut</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;ms&quot;</span><span style="color: #000000; ">) = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">500</span><span style="color: #000000; ">ms</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">queueLimit</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">100</span><span style="color: #000000; ">);
+
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">datarateLimit</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;Mbps&quot;</span><span style="color: #000000; ">) = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(-</span><span style="color: #008000; ">1</span><span style="color: #000000; ">Mbps</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// Limit the assigned bandwidth to scale down the simulation
+</span><span style="color: #000000; ">
+        </span><span style="color: #808080; font-style: italic; ">/// Polling parameters
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">wMax</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;ms&quot;</span><span style="color: #000000; ">) = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">1</span><span style="color: #000000; ">ms</span><span style="color: #000000; ">); 	 </span><span style="color: #808080; font-style: italic; ">// Maximum bandwidth for LIMITED Service
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">fixedWin</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;ms&quot;</span><span style="color: #000000; ">) = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">0</span><span style="color: #000000; ">.</span><span style="color: #008000; ">5</span><span style="color: #000000; ">ms</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// Maximum window for FIXED Service (500000 bits/cycle - 40 frames of 1500B)
+</span><span style="color: #000000; ">
+        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;i=block/fork&quot;</span><span style="color: #000000; ">);
+
+    </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">lowerLayerIn</span><span style="color: #000000; ">;
+        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">lowerLayerOut</span><span style="color: #000000; ">;
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">upperLayerIn</span><span style="color: #000000; ">;
+        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">upperLayerOut</span><span style="color: #000000; ">;
+}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

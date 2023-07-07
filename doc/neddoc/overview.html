@@ -1,0 +1,92 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+
+<p><center><h1>EPON for OMNeT++ (4.0 - 4.1)</h1></center>
+<center>release 0.8b</center></p>
+<p><h2> DESCRIPTION </h2></p>
+<p>This is a basic implementation of Ethernet Passive Optical Network. OLT and ONU modules
+are defined and they both support one or multiple LLIDs. <a href="MPCP.html">MPCP</a> protocol has been implemented
+on OLT and ONU models to assign LLIDs dynamically. The devices are implemented in a structured
+way per network Layer and basic goal is to keep them extensible. Different Queue Management,
+Relay and traffic classification modules should be easily integrated into the existing devices
+using the same MAC and MAC Control Layers. Since it is under development, many features may be
+missing.</p>
+<p><center><img src="../images/screenshot_small.jpeg" width=500px></center>  </p>
+<p><h2> BASIC FEATURES</h2></p>
+<p><h3> <a href="PON.PON_Splitter.html">PON_Splitter</a> </h3></p>
+<p>Simple passive splitting. On collision, the module discards the second frame while the
+first one has already been transmitted. Also it counts upstream and downstream collisions. This should
+actually never happen, but is really useful if you want to change the TDMA functions.</p>
+<p><h3> <a href="MPCP.html">MPCP</a> Protocol implementation </h3></p>
+<p>The current implementation varies a bit from the stds on the registration process. It currently
+send the GATE message AFTER the ONU acknowledgment, while the std say that the GATE should be
+sent right after the REGISTER message. This way we avoid allocating resources for an ONU that may
+not send ACK message later. Actually it just simplifies the upstream bandwidth allocation.</p>
+<p><h3> Layers </h3></p>
+  <ul><li><b>MAC</b>: A copy of the INET MAC layer with some changes. First it sends messages of type <a href="EtherFrameWithLLID.html">EtherFrameWithLLID</a>,
+which are actually Ethernet frames but in the preamble they include the LLID. So EPON_PREAMBLE_BYTES
+is now (7 - 2) and the frame structure is changed. These frames encapsulate the real Ethernet ones.
+Second, when the interface is IDLE and wakes-up it _will_ wait for IFG time before transmitting (instead
+of transmitting directly as in the original implementation)</li>
+  <li><b>MacCtl</b>: is used to handle time registers on both ONU and OLT. It is also responsible for
+transmitting to the lower layer at proper time. Currently it seems to work :-) but if you don't want
+to mess up, try not to touch it... I have spent days in order to achieve the TDMA. IF you see collisions
+in the Splitter module it means that something went wrong.  From release 0.8b, this module is an
+interface, and a polling-based base class is provided (see bellow on Extending).</li>
+  <li><b>Q_mgmt</b>: These modules are responsible for queue management. A simple Round Robin implementation is provided.
+Bandwidth allocation should be calculated here. This module is extensible and a module interface has been used
+in the model. So you can replace it with your own module having different functionality.</li>
+  <li><b>EPON_Relay</b>: This module implements a switch between the MAC interface and the PON interface. It takes under
+consideration the LLIDs on the PON network and the VLANs on the Ethernet one. This module is extensible
+and a module interface has been used in the model. So you can replace it with your own module having
+different functionality.</li></ul>
+<p><h2>EXTENDING</h2></p>
+<p>Some features have been added lately in order to make extending the EPON easier. Now both polling-based 
+and non-polling MacCtl modules are included. For polling setups use the <a href="PON.ONU.ONUMacCtl_P.html">ONUMacCtl_P</a> while for non-polling
+use the <a href="PON.ONU.ONUMacCtl_NP.html">ONUMacCtl_NP</a> (see example .ned files).</p>
+<p>For implementing new algorithms, for polling create a new module that will extend the <a href="PON.OLT.OLTQPerLLiDBase_P.html">OLTQPerLLiDBase_P</a> 
+class. For non-polling you should extend the <a href="PON.OLT.OLT_QPL_RR.html">OLT_QPL_RR</a> class. IN both cases overriding the DoUpstreamDBA
+method should be sufficient. More complicated algorithms (like Multi-Tread Polling or Two-Stage DBA) will
+require more changes (more methods need to be overridden) </p>
+<p><h2> INSTALLATION </h2></p>
+<p><h3>Dependencies</h3></p>
+  <ol><li>OMNet++ versions 4.0 or 4.1 (http://omnetpp.org/omnetpp/cat_view/17-downloads/1-omnet-releases/4-older-versions)</li>
+  <li>INET or INET/MANET FrameWork for the above versions (http://inet.omnetpp.org/index.php?n=Main.Download)</li>
+  <li>This version depends on a smaller project for 802.1Q vlans that comes in the same archive.</li></ol>
+<p>Installation should be straight forward. OMNet++ 4.0 and INET framework are required. Steps:</p>
+  <ul><li>Open Omnet++ IDE</li>
+  <li>Import and compile the INET project</li>
+  <li>Extract the PON_&lt;version&gt;.tar.gz file</li>
+  <li>Import Vlans project by selecting the Vlans folder of the extracted archive</li>
+  <ul><li>Setup the Project References to point to your INET</li>
+  <li>Compile</li></ul>
+  <li>Import EPON project by selecting the PON folder of the extracted archive</li>
+  <ul><li>Setup the Project References to: Vlans and INET</li></ul>
+  <li>Add the PON project to the project references of your work (optional - if you are building in an external proj./folder)</li>
+  <li>Now everything should work...</li></ul>
+<p><h3>Troubleshooting</h3>
+Some common errors, I usually receive emails for, are listed bellow:</p>
+<p>1. "inetmanet/src/linklayer/contract/Ieee802Ctrl_m.h:83:5: error: expected identifier before numeric constant"
+There are some illegal characters in the file Ieee802Ctrl.msg and specifically in the "enum EtherType". Solutions:</p>
+  <ul><ul><li>Fast 'n' Dirty: Delete the enum if you do not need it!</li>
+  <li>Decent: Open the file (.msg) with a HEX editor and remove the weird characters</li></ul></ul>
+<p>2. "Conversion from 'cPar' to 'uint64_t' is ambiguous" 
+Some casting is needed i.e: datarateLimit=(uint64_t)par("datarateLimit");</p>
+<p><h2>NOTES</h2></p>
+<p>Tested on: </p>
+  <ul><li>omnetpp-4.1<br></li>
+  <li>omnetpp-4.0p1 <br></li></ul>
+<p>With many inetmanet versions but...:
+<b>Latest INET versions will not work (v2). The same for OMNet++ 4.2!</b>. You need to get OMNet++ 4.1 and compatible INET! 
+Porting will not be done (not now at least - Any ported code is more than welcome)  </p>
+<p>For any comments or corrections email me at bodozoglou@gmail.com</p>
+<p>I hope it works for you...<br>
+Andreas</p>
+<p><hr/>
+<p>Generated by neddoc.</p></p>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

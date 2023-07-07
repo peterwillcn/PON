@@ -1,0 +1,167 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Msg File <i>src/common/EPON_messages.msg</i></h2>
+<table class="typetable">
+   <tr>
+      <th>Name</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td>
+      <a href="SyncCode.html">SyncCode</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="EtherFrameWithLLID.html">EtherFrameWithLLID</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+
+<p>This is the llid only. EtherFrame is going
+to be encapsulated into it.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="MPCP.html">MPCP</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="MPCPGate.html">MPCPGate</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="MPCPReport.html">MPCPReport</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="MPCPRegReq.html">MPCPRegReq</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="MPCPRegister.html">MPCPRegister</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="MPCPRegAck.html">MPCPRegAck</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+// 
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Lesser General Public License for more details.
+// 
+// You should have received a copy of the GNU Lesser General Public License
+// along with this program.  If not, see http://www.gnu.org/licenses/.
+// 
+</span><span style="color: #000000; ">
+</span><span style="color: #808080; font-style: italic; ">//
+// TODO generated message class
+//
+</span><span style="color: #000000; ">
+</span><span style="color: #800000; font-weight: bold; ">cplusplus</span><span style="color: #000000; "> {{
+#</span><span style="color: #000000; ">include</span><span style="color: #000000; "> </span><span style="color: #008000; ">&quot;Ethernet.h&quot;</span><span style="color: #000000; ">
+#</span><span style="color: #000000; ">include</span><span style="color: #000000; "> </span><span style="color: #008000; ">&quot;EtherFrame_m.h&quot;</span><span style="color: #000000; ">
+#</span><span style="color: #000000; ">include</span><span style="color: #000000; "> </span><span style="color: #008000; ">&quot;MACAddress.h&quot;</span><span style="color: #000000; ">
+#</span><span style="color: #000000; ">include</span><span style="color: #000000; "> &lt;</span><span style="color: #000000; ">inttypes</span><span style="color: #000000; ">.</span><span style="color: #000000; ">h</span><span style="color: #000000; ">&gt;
+}};
+
+</span><span style="color: #800000; font-weight: bold; ">class</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">noncobject</span><span style="color: #000000; "> </span><span style="color: #000000; ">MACAddress</span><span style="color: #000000; ">;
+</span><span style="color: #800000; font-weight: bold; ">class</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">noncobject</span><span style="color: #000000; "> </span><span style="color: #000000; ">EthernetIIFrame</span><span style="color: #000000; ">;
+
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #000000; "> </span><span style="color: #000000; ">SyncCode</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000080; font-weight: bold; ">char</span><span style="color: #000000; "> </span><span style="color: #000000; ">code</span><span style="color: #000000; ">;
+}
+
+</span><span style="color: #808080; font-style: italic; ">// This is the llid only. EtherFrame is going
+// to be encapsulated into it.
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #000000; "> </span><span style="color: #000000; ">EtherFrameWithLLID</span><span style="color: #000000; "> {
+    </span><span style="color: #000000; ">uint16_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">llid</span><span style="color: #000000; ">;
+}
+
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #000000; "> </span><span style="color: #000000; ">MPCP</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">EthernetIIFrame</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000000; ">uint16_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">opcode</span><span style="color: #000000; ">;
+    </span><span style="color: #000000; ">uint32_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">ts</span><span style="color: #000000; ">;
+}
+
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #000000; "> </span><span style="color: #000000; ">MPCPGate</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">MPCP</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000000; ">uint8_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">listLen</span><span style="color: #000000; ">;
+    </span><span style="color: #000000; ">uint32_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">startTime</span><span style="color: #000000; ">[];
+    </span><span style="color: #000000; ">uint32_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">duration</span><span style="color: #000000; ">[];
+    </span><span style="color: #000000; ">uint16_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">slotsNum</span><span style="color: #000000; ">;
+    </span><span style="color: #000000; ">uint16_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">slotTime</span><span style="color: #000000; ">;
+}
+
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #000000; "> </span><span style="color: #000000; ">MPCPReport</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">MPCP</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000000; ">uint8_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">bitMap</span><span style="color: #000000; ">;
+	</span><span style="color: #000000; ">uint32_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">qInfo</span><span style="color: #000000; ">[];
+}
+
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #000000; "> </span><span style="color: #000000; ">MPCPRegReq</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">MPCP</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000000; ">uint8_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">ptpNumReq</span><span style="color: #000000; ">;
+}
+
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #000000; "> </span><span style="color: #000000; ">MPCPRegister</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">MPCP</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000000; ">uint8_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">ptpNumReg</span><span style="color: #000000; ">;
+    </span><span style="color: #000000; ">uint16_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">LLIDs</span><span style="color: #000000; ">[];
+}
+
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #000000; "> </span><span style="color: #000000; ">MPCPRegAck</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">MPCP</span><span style="color: #000000; ">
+{
+}
+
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

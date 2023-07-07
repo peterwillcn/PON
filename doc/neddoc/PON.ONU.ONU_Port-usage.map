@@ -1,0 +1,6 @@
+<area shape="rect" id="node1" href="PON.ONU.ONU_Port.html" title="Compound Module ONU_Port" alt="" coords="189,83,272,111">
+<area shape="rect" id="node2" href="ned.IdealChannel.html" title="Channel IdealChannel" alt="" coords="5,161,104,189">
+<area shape="rect" id="node4" href="PON.common.EPON_mac.html" title="Simple Module EPON_mac" alt="" coords="128,161,219,189">
+<area shape="rect" id="node6" href="PON.ONU.ONUMacCtl.html" title="Module Interface ONUMacCtl" alt="" coords="243,161,336,189">
+<area shape="rect" id="node8" href="PON.ONU.ONU_Q_mgmt.html" title="Module Interface ONU_Q_mgmt" alt="" coords="360,161,469,189">
+<area shape="rect" id="node10" href="PON.ONU.EPON_ONU.html" title="Compound Module EPON_ONU" alt="" coords="183,6,279,34">

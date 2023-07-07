@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scave:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:scave="http://www.omnetpp.org/omnetpp/scave">
+  <inputs>
+    <inputs name="/PON/simulations/results/NonPollingPon-*.vec"/>
+    <inputs name="/PON/simulations/results/NonPollingPon-*.sca"/>
+  </inputs>
+  <datasets>
+    <datasets name="ONUs Tx">
+      <items xsi:type="scave:Add" filterPattern="module(*.onu_port.epon_mac) AND name(bytesSent)" type="VECTOR"/>
+      <items xsi:type="scave:LineChart" name="Bytes to time" lineNameFormat=""/>
+      <items xsi:type="scave:Apply" operation="multiply-by">
+        <params name="a" value="8"/>
+      </items>
+      <items xsi:type="scave:Apply" operation="divide-by">
+        <params name="a" value="1000000"/>
+      </items>
+      <items xsi:type="scave:Apply" operation="timewinavg">
+        <params name="windowSize" value="0.1"/>
+      </items>
+      <items xsi:type="scave:Apply" operation="diffquot"/>
+      <items xsi:type="scave:LineChart" name="ONU Tx Upstream" lineNameFormat=""/>
+    </datasets>
+    <datasets name="OLT Rx">
+      <items xsi:type="scave:Add" filterPattern=" module(**.epon_olt.olt_if.epon_mac) AND name(bytesReceivedOK)" type="VECTOR"/>
+      <items xsi:type="scave:Apply" operation="multiply-by">
+        <params name="a" value="8"/>
+      </items>
+      <items xsi:type="scave:Apply" operation="divide-by">
+        <params name="a" value="1000000"/>
+      </items>
+      <items xsi:type="scave:Apply" operation="timewinavg">
+        <params name="windowSize" value="0.1"/>
+      </items>
+      <items xsi:type="scave:Apply" operation="diffquot"/>
+      <items xsi:type="scave:LineChart" name="OLT Rx" lineNameFormat=""/>
+    </datasets>
+  </datasets>
+  <chartSheets>
+    <chartSheets name="default" charts="//@datasets/@datasets.0/@items.6 //@datasets/@datasets.1/@items.5 //@datasets/@datasets.0/@items.1"/>
+  </chartSheets>
+</scave:Analysis>

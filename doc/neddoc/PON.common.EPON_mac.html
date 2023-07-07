@@ -1,0 +1,193 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Simple Module <i>EPON_mac</i></h2>
+<b>Package:</b> PON.common<br/><b>File: <a href="src-common-EPON_mac.ned.html">src/common/EPON_mac.ned</a></b><br/><p><a href="../doxy/classEPON__mac.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>TODO auto-generated module</p>
+<img src="PON.common.EPON_mac-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="PON.common.EPON_mac.html" title="EPON_mac" alt="EPON_mac" coords="0,0,110,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+<img src="PON.common.EPON_mac-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" id="node1" href="PON.common.EPON_mac.html" title="Simple Module EPON_mac" alt="" coords="47,83,137,111">
+<area shape="rect" id="node2" href="PON.OLT.OLT_IF.html" title="Compound Module OLT_IF" alt="" coords="5,6,77,34">
+<area shape="rect" id="node4" href="PON.ONU.ONU_Port.html" title="Compound Module ONU_Port" alt="" coords="101,6,184,34">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+<img src="PON.common.EPON_mac-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" id="node1" href="PON.common.EPON_mac.html" title="Simple Module EPON_mac" alt="" coords="5,6,96,34">
+</map>
+<h3 class="subtitle">Used in compound modules:</h3>
+<p>If a module type shows up more than once, that means it has been defined in more than one NED file.</p>
+<table>
+<tr>
+   <td>
+      <a href="PON.OLT.OLT_IF.html">OLT_IF</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>TODO auto-generated module</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="PON.ONU.ONU_Port.html">ONU_Port</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>TODO auto-generated module</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">promiscuous</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">true</td>
+   <td>
+<p>if true, all packets are received, otherwise only the
+ones with matching destination MAC address</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">address</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"auto"</td>
+   <td>
+<p>MAC address as hex string (12 hex digits), or
+"auto". "auto" values will be replaced by
+a generated MAC address in init stage 0.</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">txQueueLimit</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">2</td>
+   <td>
+<p>maximum number of frames queued up for transmission;
+additional frames are dropped. Only used if queueModule==""
+The 2nd frame is used in case of changing registers with <a href="MPCP.html">MPCP</a>
+... sometimes 1 is already transmitted and the next <a href="MPCP.html">MPCP</a> decides 
+to transmitt again with the new times.</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">queueModule</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">""</td>
+   <td>
+<p>name of optional external queue module</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">mtu</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1500</td>
+   <td>   </td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">display</td>
+   <td width="100"><i>i=block/queue</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Gates:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Direction</th>
+      <th>Size</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">upperLayerIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>to EtherLLC or MACRelayUnitPP</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">upperLayerOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>to EtherLLC or MACRelayUnitPP</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">phys</xsl:if></td>
+   <td width="100"><i>inout</i></td>
+   <td width="50"></td>   <td>
+<p>to physical layer or the network</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">direct</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>Gate for sending directly (<a href="MPCP.html">MPCP</a> registration Process)</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// TODO auto-generated module
+//
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">EPON_mac</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">promiscuous</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">true</span><span style="color: #000000; ">);     </span><span style="color: #808080; font-style: italic; ">// if true, all packets are received, otherwise only the
+</span><span style="color: #000000; ">                                </span><span style="color: #808080; font-style: italic; ">// ones with matching destination MAC address
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">address</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;auto&quot;</span><span style="color: #000000; ">);       </span><span style="color: #808080; font-style: italic; ">// MAC address as hex string (12 hex digits), or
+</span><span style="color: #000000; ">                                </span><span style="color: #808080; font-style: italic; ">// &quot;auto&quot;. &quot;auto&quot; values will be replaced by
+</span><span style="color: #000000; ">                                </span><span style="color: #808080; font-style: italic; ">// a generated MAC address in init stage 0.
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">txQueueLimit</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">2</span><span style="color: #000000; ">); 	</span><span style="color: #808080; font-style: italic; ">// maximum number of frames queued up for transmission;
+</span><span style="color: #000000; ">                                		</span><span style="color: #808080; font-style: italic; ">// additional frames are dropped. Only used if queueModule==&quot;&quot;
+</span><span style="color: #000000; ">                                		</span><span style="color: #808080; font-style: italic; ">// The 2nd frame is used in case of changing registers with MPCP
+</span><span style="color: #000000; ">                                		</span><span style="color: #808080; font-style: italic; ">// ... sometimes 1 is already transmitted and the next MPCP decides 
+</span><span style="color: #000000; ">                                		</span><span style="color: #808080; font-style: italic; ">// to transmitt again with the new times.
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">queueModule</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;&quot;</span><span style="color: #000000; ">);    </span><span style="color: #808080; font-style: italic; ">// name of optional external queue module
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">mtu</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">1500</span><span style="color: #000000; ">);
+        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;i=block/queue&quot;</span><span style="color: #000000; ">);
+    </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">upperLayerIn</span><span style="color: #000000; ">;    </span><span style="color: #808080; font-style: italic; ">// to EtherLLC or MACRelayUnitPP
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">upperLayerOut</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// to EtherLLC or MACRelayUnitPP
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">inout</span><span style="color: #000000; "> </span><span style="color: #000000; ">phys</span><span style="color: #000000; ">;            </span><span style="color: #808080; font-style: italic; ">// to physical layer or the network
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">direct</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@loose</span><span style="color: #000000; ">;   </span><span style="color: #808080; font-style: italic; ">// Gate for sending directly (MPCP registration Process)
+</span><span style="color: #000000; ">
+}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>
